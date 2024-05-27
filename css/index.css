@@ -1,0 +1,36 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+:root {
+    --colorBack: #000000;
+    --colorTitulo: #14df02;
+    --colorGrey: #858585;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 5em;
+    background-color: var(--colorBack);
+    color:var(--colorGrey);
+}
+.container span {
+
+}
+@keyframes titulo {
+    0%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 12px var(--colorTitulo),
+        0 0 50px var(--colorTitulo),
+        0 0 100px var(--colorTitulo);
+    }
+    10%, 90%{
+
+    }
+
+}
