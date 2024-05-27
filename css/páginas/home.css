@@ -163,3 +163,26 @@ header {
   .logo-site {
     width: 12%;
   }
+  @media only screen and (max-width: 600px) {
+    body {
+        min-height: 100vh;
+    }
+    .li-menu-horizontal-menu-vertical {
+        width: 90%;
+    }
+    .logo-site {
+        width: 20%;
+      }
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+ 
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  
+  }
+  
+  
+  @media only screen and (min-width: 1441px) {
+  }
