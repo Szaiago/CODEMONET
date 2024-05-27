@@ -78,3 +78,21 @@ body {
         text-shadow: none;
     }
 }
+@media only screen and (max-width: 600px) {
+    body {
+        min-height: 100vh;
+        font-size: 2em;
+    }
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+ 
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  
+  }
+  
+  
+  @media only screen and (min-width: 1441px) {
+  }
