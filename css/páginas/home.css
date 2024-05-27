@@ -209,6 +209,42 @@ header {
     .logo-site {
         width: 20%;
       }
+      main {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+    .fundo-animado {
+        position: absolute;
+        display: flex;
+    }
+    .fundo-animado span {
+        width: 30px;
+        height: 30px;
+        background: var(--colorSub);
+        margin: px;
+        border-radius: 50%;
+        background-color: var(--colorSub);
+        box-shadow: 0 0 10px 10px #e600da,
+        0 10px 50px #ff00f2,
+        0 10px 100px var(--colorSub);
+        animation: animar calc(100s / var(--i)) linear infinite;
+    }
+    @keyframes animar {
+        0% {
+            transform: translateY(100vh) scale(0);
+        }
+        100% {
+            transform: translateY(-10vh) scale(1);
+        }
+    }
+    .fundo-animado span:nth-of-type(even) {
+        background: #fa017d;
+        box-shadow: 0 0 10px 10px #ff1e8e,
+        0 10px 50px #c40062,
+        0 10px 100px #fa017d;
+    }
   }
   
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
