@@ -1,5 +1,5 @@
 *{
-    padding:0;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -12,7 +12,7 @@
 }
 body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -21,13 +21,13 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color:var(--colorGrey);
+    color: var(--colorGrey);
 }
-.logo{
+.logo {
     max-width: 150px;
-    margin-right: 20px;
+    margin-bottom: 20px;
 }
-.container span {
+.container span, .author span {
     cursor: default;
     animation: titulo 3.5s ease-in-out infinite;
 }
@@ -61,6 +61,11 @@ body {
 .container span:nth-of-type(11) {
     animation-delay: 2.50s;
 }
+.author span {
+    margin-top: -100em;
+    animation-delay: 3s;
+    font-size: 0.2em;
+}
 @keyframes titulo {
     0% {
         color: rgb(255, 255, 255);
@@ -72,5 +77,4 @@ body {
         color: var(--colorGrey);
         text-shadow: none;
     }
-
 }
