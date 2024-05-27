@@ -162,6 +162,9 @@ header {
   .logo-site {
     width: 12%;
   }
+  main {
+    background-color: aqua;
+  }
   @media only screen and (max-width: 600px) {
     body {
         min-height: 100vh;
