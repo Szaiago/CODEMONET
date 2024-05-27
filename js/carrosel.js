@@ -31,7 +31,7 @@ const Carousel = {
         Carousel.index = Carousel.img.length - 1
       }
     
-      Carousel.imgs.style.transform = `translateX(${-Carousel.index * 500}px)`
+      Carousel.imgs.style.transform = `translateX(${-Carousel.index * 1280}px)`
     },
   
     start() {
