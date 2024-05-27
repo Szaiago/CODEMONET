@@ -17,10 +17,7 @@ body {
     align-items: center;
     min-height: 100vh;
     font-size: 5em;
-    background-image: url(img/background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: black;
     color:var(--colorGrey);
 }
 .logo{
@@ -54,6 +51,12 @@ body {
 }
 .container span:nth-of-type(9) {
     animation-delay: 2s;
+}
+.container span:nth-of-type(10) {
+    animation-delay: 2.25s;
+}
+.container span:nth-of-type(11) {
+    animation-delay: 2.50s;
 }
 @keyframes titulo {
     0% {
