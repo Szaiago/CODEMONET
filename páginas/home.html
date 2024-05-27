@@ -10,6 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/páginas/home.css"/>
         <link rel="shortcut icon" type="imagex/png" href="../css/img/logo.png"/>
+        <script src="../js/carrosel.js" defer></script>
     </head>
     <body>
         <header>
@@ -117,19 +118,15 @@
                 <span style="--i:32"></span>
             </div>
             <div class="container-caixas">
-                <div class="carrosel">
-                    <div class="image-container" id="imgs">
-                      <img src="../css/img/fotocarrosel.jpg" alt="first-image" class="imgcarrosel">
-                      <img src="../css/img/fotocarrosel.jpg" alt="second-image" class="imgcarrosel">
-                      <img src="../css/img/fotocarrosel.jpg" alt="third-image" class="imgcarrosel">
-                      <img src="../css/img/fotocarrosel.jpg" alt="fourth-image" class="imgcarrosel">
+                <div class="container-slider">
+                    <button id="prev-button"><img src="../css/img/arrow.png" alt="prev-button"></button>
+                    <div class="container-images">
+                      <img src="../css/img/fotocarrosel.jpg" alt="Bem vindo" class="slider on">
+                      <img src="../css/img/logo.png" alt="Tchau" class="slider">
+                      <img src="../css/img/background.jpg" alt="Tchau" class="slider">
                     </div>
-                    <div class="buttons-container">
-                      <button id="left" class="btn">Prev</button>
-                      <button id="right" class="btn">Next</button>
-                    </div>
+                    <button id="next-button"><img src="../css/img/arrow.png" alt="next-button"></button>
                   </div>
-                  <script src="../js/carrosel.js"></script>
             </div>
         </main>
         <footer></footer>
