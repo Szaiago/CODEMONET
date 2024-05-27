@@ -221,8 +221,7 @@ header {
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
 }
-
-img {
+.imgcarrosel {
   width: 500px;
   height: 500px;
   object-fit: cover;
