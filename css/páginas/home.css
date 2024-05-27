@@ -177,7 +177,7 @@ header {
     width: 30px;
     height: 30px;
     background: var(--colorSub);
-    margin: px;
+    margin: 0 4px;
     border-radius: 50%;
     background-color: var(--colorSub);
     box-shadow: 0 0 10px 10px #e600da,
@@ -223,7 +223,7 @@ header {
         width: 30px;
         height: 30px;
         background: var(--colorSub);
-        margin: px;
+        margin: 0 4px;
         border-radius: 50%;
         background-color: var(--colorSub);
         box-shadow: 0 0 10px 10px #e600da,
