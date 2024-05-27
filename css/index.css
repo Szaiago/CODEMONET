@@ -7,10 +7,12 @@
 }
 :root {
     --colorTitulo: #ffffff;
-    --colorGrey: #272727;
+    --colorLogo: #ffffffa9;
+    --colorGrey: #202020;
 }
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -21,7 +23,15 @@ body {
     background-repeat: no-repeat;
     color:var(--colorGrey);
 }
+.logo{
+    background-color: black;
+    max-width: 200px;
+    margin-top: -50px;
+    border-radius: 30px;
+    animation: logo 3.5s ease-in-out infinite;
+}
 .container span {
+    cursor: default;
     animation: titulo 3.5s ease-in-out infinite;
 }
 .container span:nth-of-type(2) {
@@ -49,15 +59,27 @@ body {
     animation-delay: 2s;
 }
 @keyframes titulo {
-    0%{
+    0% {
         color: rgb(255, 255, 255);
         text-shadow: 0 0 12px var(--colorTitulo),
         0 0 50px var(--colorTitulo),
         0 0 100px var(--colorTitulo);
     }
-    10%, 90%{
+    10%, 90% {
         color: var(--colorGrey);
         text-shadow: none;
     }
 
+}
+@keyframes logo {
+    0% {
+        box-shadow: 0 0 0px var(--coloLogo),
+        0 0 10px var(--colorLogo),
+        0 0 15px var(--colorLogo);
+    }
+    10%, 90% {
+        box-shadow: 0 0 5px var(--colorLogo),
+        0 0 15px var(--colorLogo),
+        0 0 25px var(--colorLogo);
+    }
 }
