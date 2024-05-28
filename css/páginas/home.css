@@ -303,7 +303,7 @@ footer {
 }
 .sub-menu-footer {
   width: 32.3333333333%;
-  height: 20vh;
+  height: 15vh;
   margin: 5px;
   display: flex;
   flex-direction: column;
@@ -311,10 +311,41 @@ footer {
   align-content: center;
   text-align: center;
   border-right: 1px solid var(--colorSub);
+  position: relative;
 }
+
+.li-footer {
+  position: absolute;
+  top: -180%; 
+  left: 0;
+  background-color: #fff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: none; 
+}
+
+.li-footer a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.li-footer a:hover {
+  background-color: #f0f0f0; 
+}
+
+.sub-menu-footer:hover .li-footer {
+  display: block;
+}
+
 .sub-menu-footer-info {
   width: 32.3333333333%;
-  height: 20vh;
+  height: 15vh;
   margin: 5px;
   display: flex;
   flex-direction: column;
@@ -323,9 +354,10 @@ footer {
   text-align: center;
   border-right: 1px solid var(--colorSub);
 }
+
 .sub-menu-footer-redes-sociais {
   width: 32.3333333333%;
-  height: 20vh;
+  height: 15vh;
   margin: 5px;
   display: flex;
   flex-direction: column;
@@ -333,6 +365,7 @@ footer {
   align-content: first baseline;
   text-align: center;
 }
+
 .a-footer {
   cursor: pointer;
   text-decoration: none;
@@ -366,6 +399,8 @@ footer {
   animation: animate 1s linear infinite;
   color: var(--colorSub);
 }
+
+
   @media only screen and (max-width: 600px) {
     body {
         min-height: 100vh;
