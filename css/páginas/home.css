@@ -256,6 +256,9 @@ header {
 #prev-button {
   transform: rotate(180deg);
 }
+footer {
+  width: 100%;
+}
 .container-footer {
   width: 100%;
   height: auto;
