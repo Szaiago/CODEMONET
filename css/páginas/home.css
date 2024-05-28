@@ -270,7 +270,7 @@ footer {
 }
 .sub-menu-footer {
   width: 33.3333333333%;
-  height: auto;
+  height: 30vh;
   background-color: #ffffff;
 }
   @media only screen and (max-width: 600px) {
