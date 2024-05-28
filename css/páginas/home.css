@@ -268,6 +268,11 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+.sub-menu-footer {
+  width: 33.3333333333%;
+  height: auto;
+  background-color: #ffffff;
+}
   @media only screen and (max-width: 600px) {
     body {
         min-height: 100vh;
