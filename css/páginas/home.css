@@ -13,6 +13,12 @@ footer h3 {
   font-family: Lato, sans-serif;
   font-weight: bold;
 }
+footer h4 {
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+}
 p {
   cursor: default;
   margin-top: 5vh;
@@ -468,7 +474,7 @@ footer {
         top: -12.5em;
       }
     .li-footer-2 {
-        top: -4.95em;
+        top: -3.5em;
       }
     .li-footer-3 {
         top: -14.3em;
