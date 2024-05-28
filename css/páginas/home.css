@@ -7,8 +7,7 @@
 :root {
     --colorSub: #ff00f2;
 }
-h3 {
-  cursor: default;
+footer h3 {
   font-size: 24px;
   color: rgb(255, 255, 255);
   font-family: Lato, sans-serif;
@@ -29,7 +28,7 @@ body {
     height: auto;
     min-height: 100vh;
     width: 100%;
-    background-color: white;
+    background-color: rgb(243, 243, 243);
     overflow-y: auto;
 }
 body::-webkit-scrollbar {
@@ -293,13 +292,19 @@ footer {
 .container-footer {
   width: 100%;
   border-radius: 10px 10px 0 0;
-  box-shadow: 20px 0 12px var(--colorSub);
+  box-shadow: 0 0 12px var(--colorSub);
   height: auto;
   background-color: black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+#sub-menu-1{
+  cursor: pointer;
+}
+#sub-menu-2{
+  cursor: pointer;
 }
 .sub-menu-footer {
   width: 32.3333333333%;
@@ -316,15 +321,16 @@ footer {
 
 .li-footer {
   position: absolute;
-  top: -180%; 
+  top: -140%;
   left: 0;
-  background-color: #fff; 
+  background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   list-style: none;
   padding: 0;
   margin: 0;
   width: 100%;
-  display: none; 
+  display: none;
+  box-shadow: 0 0 12px var(--colorSub);
 }
 
 .li-footer a {
@@ -336,12 +342,9 @@ footer {
 }
 
 .li-footer a:hover {
-  background-color: #f0f0f0; 
+  background-color: #f0f0f0;
 }
 
-.sub-menu-footer:hover .li-footer {
-  display: block;
-}
 
 .sub-menu-footer-info {
   width: 32.3333333333%;
@@ -349,10 +352,36 @@ footer {
   margin: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: first baseline;
-  align-content: first baseline;
+  justify-content: center;
+  align-content: center;
   text-align: center;
   border-right: 1px solid var(--colorSub);
+  position: relative;
+}
+.li-footer-2 {
+  position: absolute;
+  top: -30%;
+  left: -4%;
+  background-color: #fff;
+  box-shadow: 0 0 12px var(--colorSub);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 104%;
+  display: none;
+}
+
+.li-footer-2 h4 {
+  cursor: default;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.li-footer-2 a:hover {
+  background-color: #f0f0f0;
 }
 
 .sub-menu-footer-redes-sociais {
@@ -361,11 +390,39 @@ footer {
   margin: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: first baseline;
-  align-content: first baseline;
+  justify-content: center;
+  align-content: center;
   text-align: center;
+  position: relative;
+}
+.li-footer-3 {
+  cursor: pointer;
+  position: absolute;
+  top: -160.5%;
+  left: -4%;
+  background-color: #fff;
+  box-shadow: 0 0 12px var(--colorSub);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 104%;
+  display: none;
 }
 
+.li-footer-3 a {
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.li-footer-3 a:hover {
+  background-color: #f0f0f0;
+  color: var(--colorSub);
+}
 .a-footer {
   cursor: pointer;
   text-decoration: none;
@@ -376,32 +433,28 @@ footer {
 .a-footer:hover {
   color: var(--colorSub);
 }
-.container-redes-sociais {
-  margin-top: 5vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-.a-redes-sociais-footer {
+#sub-menu-3{
   cursor: pointer;
-  font-size: 30px;
-  color: white;
-  -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
 }
-.a-redes-sociais-footer:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.05);
-  animation: animate 1s linear infinite;
-  color: var(--colorSub);
+.container-redes-sociais {
+  width: 32.3333333333%;
+  height: 15vh;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border-right: 1px solid var(--colorSub);
+  position: relative;
 }
+
 
 
   @media only screen and (max-width: 600px) {
+    footer h3 {
+      font-size: 14px;
+    }
     body {
         min-height: 100vh;
     }
@@ -410,6 +463,15 @@ footer {
     }
     .logo-site {
         width: 20%;
+      }
+    .li-footer {
+        top: -200%;
+      }
+    .li-footer-2 {
+        top: -79%;
+      }
+    .li-footer-3 {
+        top: -228.5%;
       }
   }
   
