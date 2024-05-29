@@ -21,6 +21,7 @@ footer {
     width: 100%;
   }
   .container-footer {
+    z-index: 1;
     width: 100%;
     border-radius: 10px 10px 0 0;
     box-shadow: 0 0 12px var(--colorSub);
@@ -51,7 +52,6 @@ footer {
   }
   
   .li-footer {
-    z-index: -1;
     position: absolute;
     top: -140%;
     left: 0;
@@ -91,7 +91,6 @@ footer {
     position: relative;
   }
   .li-footer-2 {
-    z-index: -1;
     position: absolute;
     top: -30%;
     left: -4%;
@@ -129,7 +128,6 @@ footer {
     position: relative;
   }
   .li-footer-3 {
-    z-index: -1;
     cursor: pointer;
     position: absolute;
     top: -160.5%;

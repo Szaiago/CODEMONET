@@ -37,7 +37,6 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
   }
 .fundo-animado {
-    z-index: -3;
     position: absolute;
     display: flex;
 }
@@ -79,7 +78,6 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
 }
 .container-slider {
-  z-index: -2;
   display: flex;
   width: 100%;
   align-items: center;
