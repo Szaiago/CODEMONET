@@ -23,7 +23,6 @@
       .logo-site {
         height:6%;
         top: 3.4%;
-        
       }
   }
   
@@ -48,6 +47,10 @@
         }
       .li-footer-3 {
           top: -14.3em;
+        }
+        .logo-site {
+          height:6.5%;
+          top: 3.4%;
         }
   }
   

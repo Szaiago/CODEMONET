@@ -142,9 +142,9 @@ header {
   }
   .logo-site {
     height:8%;
-    position: fixed;
+    top: 2%;
     left: 50%; 
     transform: translateX(-50%);
+    position: fixed;
     z-index: 2000;
-    top: 2%;
   }
