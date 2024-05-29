@@ -11,8 +11,8 @@ footer h3 {
     font-weight: bold;
   }
   p {
-    cursor: default;
     margin-top: 5vh;
+    cursor: default;
     color: rgb(255, 255, 255);
     font-family: Lato, sans-serif;
     font-weight: bold;
@@ -21,8 +21,8 @@ footer {
     width: 100%;
   }
   .container-footer {
-    z-index: 1;
     width: 100%;
+    z-index: 1;
     border-radius: 10px 10px 0 0;
     box-shadow: 0 0 12px var(--colorSub);
     height: auto;
@@ -47,27 +47,27 @@ footer {
     justify-content: center;
     align-content: center;
     text-align: center;
-    border-right: 1px solid var(--colorSub);
     position: relative;
+    border-right: 1px solid var(--colorSub);
   }
   
   .li-footer {
-    position: absolute;
+    width: 100%;
     top: -140%;
     left: 0;
-    background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    list-style: none;
     padding: 0;
     margin: 0;
-    width: 100%;
-    display: none;
     box-shadow: 0 0 12px var(--colorSub);
+    background-color: #fff;
+    position: absolute;
+    display: none;
+    list-style: none;
   }
   
   .li-footer a {
-    display: block;
     padding: 10px;
+    display: block;
     text-decoration: none;
     color: #333;
     transition: background-color 0.3s ease;
@@ -87,26 +87,26 @@ footer {
     justify-content: center;
     align-content: center;
     text-align: center;
-    border-right: 1px solid var(--colorSub);
     position: relative;
+    border-right: 1px solid var(--colorSub);
   }
   .li-footer-2 {
-    position: absolute;
+    width: 104%;
     top: -30%;
     left: -4%;
+    padding: 0;
+    margin: 0;
     background-color: #fff;
     box-shadow: 0 0 12px var(--colorSub);
     list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 104%;
+    position: absolute;
     display: none;
   }
   
   .li-footer-2 h4 {
+    padding: 10px;
     cursor: default;
     display: block;
-    padding: 10px;
     text-decoration: none;
     color: #333;
     transition: background-color 0.3s ease;
@@ -128,25 +128,25 @@ footer {
     position: relative;
   }
   .li-footer-3 {
-    cursor: pointer;
-    position: absolute;
     top: -160.5%;
     left: -4%;
+    width: 104%;
+    
     background-color: #fff;
     box-shadow: 0 0 12px var(--colorSub);
-    list-style: none;
     padding: 0;
     margin: 0;
-    width: 104%;
+    list-style: none;
     display: none;
+    cursor: pointer;
+    position: absolute;
   }
   
   .li-footer-3 a {
-
+    font-size: 30px;
+    padding: 10px;
     cursor: pointer;
     display: block;
-    padding: 10px;
-    font-size: 30px;
     text-decoration: none;
     color: #333;
     transition: background-color 0.3s ease;
@@ -178,6 +178,6 @@ footer {
     justify-content: center;
     align-content: center;
     text-align: center;
-    border-right: 1px solid var(--colorSub);
     position: relative;
+    border-right: 1px solid var(--colorSub);
   }
