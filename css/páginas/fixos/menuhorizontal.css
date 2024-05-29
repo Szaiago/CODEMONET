@@ -33,13 +33,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.li-menu-horizontal-logo {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 .button-menu {
     width: 30px;
     height: 2px;
@@ -147,5 +141,10 @@ header {
     color: var(--colorSub);
   }
   .logo-site {
-    width: 12%;
+    height:8%;
+    position: fixed;
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 2000;
+    top: 2%;
   }
