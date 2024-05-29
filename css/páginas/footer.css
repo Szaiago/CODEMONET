@@ -51,6 +51,7 @@ footer {
   }
   
   .li-footer {
+    z-index: -1;
     position: absolute;
     top: -140%;
     left: 0;
@@ -90,6 +91,7 @@ footer {
     position: relative;
   }
   .li-footer-2 {
+    z-index: -1;
     position: absolute;
     top: -30%;
     left: -4%;
@@ -127,6 +129,7 @@ footer {
     position: relative;
   }
   .li-footer-3 {
+    z-index: -1;
     cursor: pointer;
     position: absolute;
     top: -160.5%;
@@ -141,6 +144,7 @@ footer {
   }
   
   .li-footer-3 a {
+
     cursor: pointer;
     display: block;
     padding: 10px;

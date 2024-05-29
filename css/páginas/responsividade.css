@@ -23,11 +23,51 @@
   }
   
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
- 
+    footer h3 {
+        font-size: 14px;
+      }
+      body {
+          min-height: 100vh;
+      }
+      .li-menu-horizontal-menu-vertical {
+          width: 82%;
+      }
+      .logo-site {
+          width: 20%;
+        }
+      .li-footer {
+          top: -12.5em;
+        }
+      .li-footer-2 {
+          top: -3.5em;
+        }
+      .li-footer-3 {
+          top: -14.3em;
+        }
   }
   
   @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-  
+    footer h3 {
+        font-size: 14px;
+      }
+      body {
+          min-height: 100vh;
+      }
+      .li-menu-horizontal-menu-vertical {
+          width: 82%;
+      }
+      .logo-site {
+          width: 20%;
+        }
+      .li-footer {
+          top: -12.5em;
+        }
+      .li-footer-2 {
+          top: -2.5em;
+        }
+      .li-footer-3 {
+          top: -14.3em;
+        }
   }
   
   
