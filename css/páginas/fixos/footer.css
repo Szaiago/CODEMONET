@@ -54,7 +54,7 @@ footer {
   
   .li-footer {
     width: 100%;
-    top: -140%;
+    top: -28vh;
     left: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 0;
@@ -93,7 +93,7 @@ footer {
   }
   .li-footer-2 {
     width: 104%;
-    top: -30%;
+    top: -5.9vh;
     left: -4%;
     padding: 0;
     margin: 0;
@@ -129,7 +129,7 @@ footer {
     position: relative;
   }
   .li-footer-3 {
-    top: -160.5%;
+    top: -32.5vh;
     left: -4%;
     width: 104%;
     
