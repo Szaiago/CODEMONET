@@ -38,8 +38,9 @@
           width: 82%;
       }
       .logo-site {
-          width: 20%;
-        }
+        height:6.5%;
+        top: 3.4%;
+      }
       .li-footer {
           top: -12.5em;
         }
@@ -48,10 +49,6 @@
         }
       .li-footer-3 {
           top: -14.3em;
-        }
-        .logo-site {
-          height:6.5%;
-          top: 3.4%;
         }
   }
   
