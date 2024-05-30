@@ -9,21 +9,21 @@
         width: 82%;
     }
     .logo-site {
-        width: 20%;
-      }
+      width: 13%;
+      height: 7%;
+      top: 3.4%;
+    }
     .li-footer {
+        width: 100%;
         top: -12.5em;
       }
     .li-footer-2 {
-        top: -3.5em;
+        width: 100%;
+        top: -5.7em;
       }
     .li-footer-3 {
+        width: 100%;
         top: -14.3em;
-      }
-      .logo-site {
-        width: 13%;
-        height: 7%;
-        top: 3.4%;
       }
   }
   
