@@ -13,6 +13,9 @@
       height: 7%;
       top: 3.4%;
     }
+    .titulo {
+      font-size: 28px;
+    }
     .li-footer {
         width: 100%;
         top: -12.5em;
