@@ -147,7 +147,6 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   height: auto;
   background-image: url(../img/fundocards.png);
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 0 12px var(--colorSub);
@@ -162,10 +161,63 @@ body::-webkit-scrollbar-thumb {
 }
 .responsivo-container-cards-destaques {
   width: 100%;
+  z-index: 1;
+  position: relative;
   height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+.responsivo-container-cards-destaques .card {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  margin: 15px;
+  border-radius: 15px;
+  box-shadow: 20px 20px 50px rgb(255, 255, 255);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+.responsivo-container-cards-destaques .card .conteudo-card {
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transform: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.responsivo-container-cards-destaques .card:hover .conteudo-card {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.responsivo-container-cards-destaques .card .conteudo-card h3 {
+  font-size: 1.8em;
+  color: #ffffff;
+  z-index: 1;
+}
+.responsivo-container-cards-destaques .card .conteudo-card p {
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 300;
+}
+.responsivo-container-cards-destaques .card .conteudo-card a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 500;
 }
