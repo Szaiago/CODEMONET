@@ -146,10 +146,11 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   height: auto;
-  background-color: #000000;
+  background: url(../img/fundocards.png);
   box-shadow: 0 0 12px var(--colorSub);
 }
 .titulo-container-cards-destaques {
+  margin-top: 1.5%;
   width: 100%;
   height: auto;
   display: flex;
@@ -158,6 +159,7 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 .responsivo-container-cards-destaques {
+  margin-top: 3.3%;
   width: 100%;
   height: auto;
   display: flex;
