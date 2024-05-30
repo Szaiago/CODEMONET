@@ -13,8 +13,12 @@
       height: 7%;
       top: 3.4%;
     }
+    .container-cards-destaques {
+      background-position: center;
+    }
     .titulo {
       font-size: 28px;
+      text-wrap: nowrap;
     }
     .li-footer {
         width: 100%;
