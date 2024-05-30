@@ -146,7 +146,10 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   height: auto;
-  background-color: #000000;
+  background-image: url(../img/fundocards.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: 0 0 12px var(--colorSub);
 }
 .titulo-container-cards-destaques {
@@ -165,99 +168,4 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-.cards-destaques {
-  width: 13em;
-  height: 15em;
-  margin: 15px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  align-items: center;
-  background-color: #e5e5e5;
-  box-shadow: 0 0 12px var(--colorSub);
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.cards-destaques:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.05);
-  animation: animate 1s linear infinite;
-}
-.cards-destaques-titulo {
-  height: auto;
-  width: 100%;
-  border-radius: 15px 15px 18px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--colorSub);
-  box-shadow: 2px 10px 15px #c40062;
-}
-.cards-destaques-demo {
-  width: 100%;
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.Social-Button {
-  width: 7em;
-  height: 2em;
-  font-size: 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  display: block;
-  border: none;
-  color: #ffffff;
-  background-color: rgb(2, 82, 255);
-  box-shadow: 0 0 15px rgb(0, 59, 187);
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.Social-Button:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.05);
-  animation: animate 1s linear infinite;
-  background-color: rgb(57, 120, 255);
-}
-.cards-destaques-vermais {
-  width: 100%;
-  height: 20%;
-  border-radius: 18px 0 15px 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--colorSub);
-  box-shadow: 0 -5px 15px var(--colorSub);
-}
-.VerMais {
-  width: 10em;
-  height: 2em;
-  border-radius: 40px;
-  cursor: pointer;
-  display: block;
-  border: none;
-  color: #ffffff;
-  background-color: #000000;
-  box-shadow: 0 0 12px rgb(0, 0, 0);
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.VerMais:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.05);
-  animation: animate 1s linear infinite;
-  background-color: #101010;
-  color: var(--colorSub);
 }
