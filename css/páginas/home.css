@@ -166,98 +166,60 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
 }
-.cards-destaques {
-  width: 13em;
-  height: 15em;
-  margin: 15px;
+.responsivo-container-cards-destaques .cards-destaques{
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 10px 10px 30px rgba(219, 16, 175, 0.5);
   border-radius: 15px;
+  background: rgba(255, 255, 255, 0.705);
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  align-items: center;
-  background-color: #e5e5e5;
-  box-shadow: 0 0 12px var(--colorSub);
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.cards-destaques:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.05);
-  animation: animate 1s linear infinite;
-}
-.cards-destaques-titulo {
-  height: auto;
-  width: 100%;
-  border-radius: 15px 15px 18px 0;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: var(--colorSub);
-  box-shadow: 2px 10px 15px #c40062;
+  border-top: 1px solid rgba(255, 255, 255, 0.705);
+  border-left: 1px solid rgba(255, 255, 255, 0.705);
+  backdrop-filter: blur(5px);
 }
-.cards-destaques-demo {
-  width: 100%;
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.responsivo-container-cards-destaques .cards-destaques .content{
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(100px);
 }
-.Social-Button {
-  width: 7em;
-  height: 2em;
-  font-size: 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  display: block;
-  border: none;
-  color: #ffffff;
-  background-color: rgb(2, 82, 255);
-  box-shadow: 0 0 15px rgb(0, 59, 187);
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.responsivo-container-cards-destaques .cards-destaques:hover .content{
+  transform: translateY(0px);
+  opacity: 1;
 }
-.Social-Button:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.05);
-  animation: animate 1s linear infinite;
-  background-color: rgb(57, 120, 255);
+.responsivo-container-cards-destaques .cards-destaques .content h2{
+  position: absolute;
+  top: -135px;
+  right: -10px;
+  font-size: 11em;
+  color: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
 }
-.cards-destaques-vermais {
-  width: 100%;
-  height: 20%;
-  border-radius: 18px 0 15px 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--colorSub);
-  box-shadow: 0 -5px 15px var(--colorSub);
+.content h3{
+  font-size: 3em;
+  color: #fff;
+  z-index: 10000000;
 }
-.VerMais {
-  width: 10em;
-  height: 2em;
-  border-radius: 40px;
-  cursor: pointer;
-  display: block;
-  border: none;
-  color: #ffffff;
-  background-color: #000000;
-  box-shadow: 0 0 12px rgb(0, 0, 0);
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.content p{
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
 }
-.VerMais:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.05);
-  animation: animate 1s linear infinite;
-  background-color: #101010;
-  color: var(--colorSub);
+.content a{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #fff;
+  color: #000000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 0 15px rgba(219, 16, 175, 0.5);
 }
