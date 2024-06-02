@@ -1,203 +1,211 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>CM/Home</title>
-        <meta charset="utf-8">
-        <meta name="author" content="Iago Souza">
-        <meta name="publisher" content="Iago Souza" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="description" content="Estilos de objetos para HTML5 e CSS3">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../css/páginas/fixos/cardlogin.css"/>
-        <link rel="stylesheet" href="../css/páginas/fixos/menuhorizontal.css"/>
-        <link rel="stylesheet" href="../css/páginas/fixos/footer.css"/>
-        <link rel="stylesheet" href="../css/páginas/home.css"/>
-        <link rel="stylesheet" href="../css/páginas/fixos/responsividade.css"/>
-        <link rel="shortcut icon" type="imagex/png" href="../css/img/logo.png"/>
-        <script src="../js/carrosel.js" defer></script>
-        <script src="../js/dropTop.js" defer></script>
-        <script src="../js/cards.js" defer></script>
-        <script type="text/javascript" src="../js/vanilla-tilt.js"></script>
-        <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
-        <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
-    </head>
-    <body>
+<head>
+    <title>CM/Home</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Iago Souza">
+    <meta name="publisher" content="Iago Souza" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content="Estilos de objetos para HTML5 e CSS3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/páginas/fixos/cardlogin.css"/>
+    <link rel="stylesheet" href="../css/páginas/fixos/menuhorizontal.css"/>
+    <link rel="stylesheet" href="../css/páginas/fixos/footer.css"/>
+    <link rel="stylesheet" href="../css/páginas/home.css"/>
+    <link rel="stylesheet" href="../css/páginas/fixos/responsividade.css"/>
+    <link rel="shortcut icon" type="imagex/png" href="../css/img/logo.png"/>
+    <script src="../js/carrosel.js" defer></script>
+    <script src="../js/dropTop.js" defer></script>
+    <script src="../js/cards.js" defer></script>
+    <script type="text/javascript" src="../js/vanilla-tilt.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="modal-overlay" id="modal-overlay">
         <div class="card-login">
+            <button class="close-button" id="close-modal">&times;</button>
             <input type="checkbox" id="chk" aria-hidden="true">
             <div aria-colspan="cadastrar">
                 <form>
-                    <label for="chk" aria-hidden="true">Sign Up</label>
-                    <input type=" text" name="txt" placeholder="Nome:" required>
-                    <input type=" email" name="email" placeholder="Email:" required>
-                    <input type=" password" name="senha" placeholder="Senha:" required>
-                    <button>Sign Up</button>
+                    <label class="label-form-input" for="chk" aria-hidden="true">Sign Up</label>
+                    <input class="form-login-input" type="text" name="txt" placeholder="Nome:" required>
+                    <input class="form-login-input" type="email" name="email" placeholder="Email:" required>
+                    <input class="form-login-input" type="password" name="senha" placeholder="Senha:" required>
+                    <button class="button-form-login">Sign Up</button>
                 </form>
             </div>
             <div class="login">
                 <form>
-                    <label for="chk" aria-hidden="true">Login</label>
-                    <input type="email" name="email" placeholder="Email:" required>
-                    <input type="password" name="pswd" placeholder="Senha:" required>
-                    <button>Login</button>
+                    <label class="label-form-input" for="chk" aria-hidden="true">Login</label>
+                    <input class="form-login-input" type="email" name="email" placeholder="Email:" required>
+                    <input class="form-login-input" type="password" name="pswd" placeholder="Senha:" required>
+                    <button class="button-form-login">Login</button>
                 </form>
             </div>
-         </div>
-        <header>
-            <div class="menu-horizontal">
-                <ul class="ul-menu-horizontal">
-                    <li class="li-menu-horizontal-menu-vertical">
-                        <div class="container-menu-vertical">
-                            <input type="checkbox" id="menu-horizontal-button">
-                            <label for="menu-horizontal-button">
-                                <div class="div-button-menu-horizontal">
-                                    <span class="button-menu"></span>
-                                </div>
-                            </label>
-                            <nav>
-                                <ul class="ul-button">
-                                    <li class="li-vertical-menu"><a class="a-vertical-menu" href="#">MENU</a></li>
-                                    <li class="li-vertical"><a class="a-vertical" href="#">HOME</a></li>
-                                    <li class="li-vertical"><a class="a-vertical" href="#">CONFIGURAÇÕES</a></li>
-                                    <li class="li-vertical-fim"><a class="a-vertical" href="#">LOGAR</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </li>
-                    <li class="li-menu-horizontal-logo">
-                        <div class="logo-menu-horizontal">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </header>
-        <img src="../css/img/logo.png" class="logo-site">
-        <main>
-            <div class="fundo-animado">
-                <span style="--i:11"></span>
-                <span style="--i:17"></span>
-                <span style="--i:25"></span>
-                <span style="--i:14"></span>
-                <span style="--i:9"></span>
-                <span style="--i:28"></span>
-                <span style="--i:2"></span>
-                <span style="--i:7"></span>
-                <span style="--i:30"></span>
-                <span style="--i:10"></span>
-                <span style="--i:27"></span>
-                <span style="--i:26"></span>
-                <span style="--i:1"></span>
-                <span style="--i:15"></span>
-                <span style="--i:6"></span>
-                <span style="--i:23"></span>
-                <span style="--i:22"></span>
-                <span style="--i:32"></span>
-                <span style="--i:11"></span>
-                <span style="--i:17"></span>
-                <span style="--i:25"></span>
-                <span style="--i:14"></span>
-                <span style="--i:9"></span>
-                <span style="--i:28"></span>
-                <span style="--i:2"></span>
-                <span style="--i:7"></span>
-                <span style="--i:30"></span>
-                <span style="--i:10"></span>
-                <span style="--i:27"></span>
-                <span style="--i:26"></span>
-                <span style="--i:1"></span>
-                <span style="--i:15"></span>
-                <span style="--i:6"></span>
-                <span style="--i:23"></span>
-                <span style="--i:22"></span>
-                <span style="--i:32"></span>
-                <span style="--i:11"></span>
-                <span style="--i:17"></span>
-                <span style="--i:25"></span>
-                <span style="--i:14"></span>
-                <span style="--i:9"></span>
-                <span style="--i:28"></span>
-                <span style="--i:2"></span>
-                <span style="--i:7"></span>
-                <span style="--i:30"></span>
-                <span style="--i:10"></span>
-                <span style="--i:27"></span>
-            </div>
-            <div class="container-carrosel">
-                <div class="container-slider">
-                  <button id="prev-button"><img src="../css/img/arrow.png" alt="prev-button"></button>
-                  <div class="container-images">
+        </div>
+    </div>
+
+    <header>
+        <div class="menu-horizontal">
+            <ul class="ul-menu-horizontal">
+                <li class="li-menu-horizontal-menu-vertical">
+                    <div class="container-menu-vertical">
+                        <input type="checkbox" id="menu-horizontal-button">
+                        <label for="menu-horizontal-button">
+                            <div class="div-button-menu-horizontal">
+                                <span class="button-menu"></span>
+                            </div>
+                        </label>
+                        <nav>
+                            <ul class="ul-button">
+                                <li class="li-vertical-menu"><a class="a-vertical-menu" href="#">MENU</a></li>
+                                <li class="li-vertical"><a class="a-vertical" href="#">HOME</a></li>
+                                <li class="li-vertical"><a class="a-vertical" href="#">CONFIGURAÇÕES</a></li>
+                                <li class="li-vertical-fim"><a class="a-vertical" href="#">LOGAR</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </li>
+                <li class="li-menu-horizontal-logo">
+                    <div class="logo-menu-horizontal">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <img src="../css/img/logo.png" class="logo-site">
+    <main>
+        <div class="fundo-animado">
+            <span style="--i:11"></span>
+            <span style="--i:17"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:9"></span>
+            <span style="--i:28"></span>
+            <span style="--i:2"></span>
+            <span style="--i:7"></span>
+            <span style="--i:30"></span>
+            <span style="--i:10"></span>
+            <span style="--i:27"></span>
+            <span style="--i:26"></span>
+            <span style="--i:1"></span>
+            <span style="--i:15"></span>
+            <span style="--i:6"></span>
+            <span style="--i:23"></span>
+            <span style="--i:22"></span>
+            <span style="--i:32"></span>
+            <span style="--i:11"></span>
+            <span style="--i:17"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:9"></span>
+            <span style="--i:28"></span>
+            <span style="--i:2"></span>
+            <span style="--i:7"></span>
+            <span style="--i:30"></span>
+            <span style="--i:10"></span>
+            <span style="--i:27"></span>
+            <span style="--i:26"></span>
+            <span style="--i:1"></span>
+            <span style="--i:15"></span>
+            <span style="--i:6"></span>
+            <span style="--i:23"></span>
+            <span style="--i:22"></span>
+            <span style="--i:32"></span>
+            <span style="--i:11"></span>
+            <span style="--i:17"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:9"></span>
+            <span style="--i:28"></span>
+            <span style="--i:2"></span>
+            <span style="--i:7"></span>
+            <span style="--i:30"></span>
+            <span style="--i:10"></span>
+            <span style="--i:27"></span>
+        </div>
+        <div class="container-carrosel">
+            <div class="container-slider">
+                <button id="prev-button"><img src="../css/img/arrow.png" alt="prev-button"></button>
+                <div class="container-images">
                     <img src="../css/img/bemvindosslider.gif" alt="Bem vindo" class="slider on">
                     <img src="../css/img/seinspireslider.gif" alt="Frase de efeito" class="slider">
                     <img src="../css/img/vejamaissobrenosslider.gif" alt="Sobre Nós" class="slider">
                     <img src="../css/img/junteseanosslider.gif" alt="Junte-se a Nós" class="slider">
                     <img src="../css/img/logoslider.gif" alt="Logo" class="slider">
-                  </div>
-                  <button id="next-button"><img src="../css/img/arrow.png" alt="next-button"></button>
                 </div>
-            </div>
-        </main>
-        <div class="container-cards-destaques">
-            <div class="titulo-container-cards-destaques">
-                <div class="titulo">
-                    <h2>VOCÊ PODE GOSTAR:</h2>
-                </div>
-            </div>
-            <div class="responsivo-container-cards-destaques">
-                <div class="cards-destaques">
-                    <div class="content">
-                        <h2>01</h2>
-                        <h3>Card One</h3>
-                        <p>Descrição</p>
-                        <a href="#">Ver</a>
-                    </div>
-                </div>
-                <div class="cards-destaques">
-                    <div class="content">
-                        <h2>02</h2>
-                        <h3>Card Two</h3>
-                        <p>Descrição</p>
-                        <a href="#">Ver</a>
-                    </div>
-                </div>
-                <div class="cards-destaques">
-                    <div class="content">
-                        <h2>03</h2>
-                        <h3>Card three</h3>
-                        <p>Descrição</p>
-                        <a href="#">Ver</a>
-                    </div>
-                </div>
-                
+                <button id="next-button"><img src="../css/img/arrow.png" alt="next-button"></button>
             </div>
         </div>
-        <footer>
-            <div class="container-footer">
-                <div class="sub-menu-footer" id="sub-menu-1">
-                    <h3>SUBMENUS</h3>
-                        <ul class="li-footer" id="submenu-list-1">
-                            <li><a class="a-footer" href="#">BOTÕES</a></li>
-                            <li><a class="a-footer" href="#">CARROSEL</a></li>
-                            <li><a class="a-footer" href="#">SCROLL</a></li>
-                            <li><a class="a-footer" href="#">ANIMAÇÕES</a></li>
-                            <li><a class="a-footer" href="#">MENUS</a></li>
-                        </ul>
-                </div>  
-                <div class="sub-menu-footer-info" id="sub-menu-2">
-                    <h3>SOBRE NÓS</h3>
-                        <ul class="li-footer-2" id="submenu-list-2">
-                            <li><h4 class="p-footer-2">Estudantes da Escola Sesi Senai de Itajaí/SC</h4></li>
-                        </ul>
-                </div>
-                <div class="sub-menu-footer-redes-sociais"id="sub-menu-3">
-                    <h3>REDES SOCIAIS</h3>
-                        <ul class="li-footer-3" id="submenu-list-3">
-                            <li ><a class="a-footer"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                            <li ><a class="a-footer"><ion-icon name="mail-outline"></ion-icon></a></li>
-                            <li ><a class="a-footer"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                            <li ><a class="a-footer"><ion-icon name="logo-github"></ion-icon></a></li>
-                        </ul>
-                </div>
+    </main>
+    <div class="container-cards-destaques">
+        <div class="titulo-container-cards-destaques">
+            <div class="titulo">
+                <h2>VOCÊ PODE GOSTAR:</h2>
+            </div>
+        </div>
+        <div class="responsivo-container-cards-destaques">
+            <div class="cards-destaques">
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>Card One</h3>
+                    <p>Descrição</p>
+                    <a href="#">Ver</a>
                 </div>
             </div>
-        </footer>
-    </body>
+            <div class="cards-destaques">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>Card Two</h3>
+                    <p>Descrição</p>
+                    <a href="#">Ver</a>
+                </div>
+            </div>
+            <div class="cards-destaques">
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>Card three</h3>
+                    <p>Descrição</p>
+                    <a href="#">Ver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-footer">
+            <div class="sub-menu-footer" id="sub-menu-1">
+                <h3>SUBMENUS</h3>
+                <ul class="li-footer" id="submenu-list-1">
+                    <li><a class="a-footer" href="#">BOTÕES</a></li>
+                    <li><a class="a-footer" href="#">CARROSEL</a></li>
+                    <li><a class="a-footer" href="#">SCROLL</a></li>
+                    <li><a class="a-footer" href="#">ANIMAÇÕES</a></li>
+                    <li><a class="a-footer" href="#">MENUS</a></li>
+                </ul>
+            </div>
+            <div class="sub-menu-footer-info" id="sub-menu-2">
+                <h3>SOBRE NÓS</h3>
+                <ul class="li-footer-2" id="submenu-list-2">
+                    <li><h4 class="p-footer-2">Estudantes da Escola Sesi Senai de Itajaí/SC</h4></li>
+                </ul>
+            </div>
+            <div class="sub-menu-footer-redes-sociais" id="sub-menu-3">
+                <h3>REDES SOCIAIS</h3>
+                <ul class="li-footer-3" id="submenu-list-3">
+                    <li><a class="a-footer"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a class="a-footer"><ion-icon name="mail-outline"></ion-icon></a></li>
+                    <li><a class="a-footer"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a class="a-footer"><ion-icon name="logo-github"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('close-modal').addEventListener('click', function() {
+            document.getElementById('modal-overlay').style.display = 'none';
+        });
+    </script>
+</body>
 </html>
