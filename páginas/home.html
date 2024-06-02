@@ -8,6 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="description" content="Estilos de objetos para HTML5 e CSS3">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/páginas/fixos/cardlogin.css"/>
         <link rel="stylesheet" href="../css/páginas/fixos/menuhorizontal.css"/>
         <link rel="stylesheet" href="../css/páginas/fixos/footer.css"/>
         <link rel="stylesheet" href="../css/páginas/home.css"/>
@@ -21,6 +22,26 @@
         <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
     </head>
     <body>
+        <div class="card-login">
+            <input type="checkbox" id="chk" aria-hidden="true">
+            <div aria-colspan="cadastrar">
+                <form>
+                    <label for="chk" aria-hidden="true">Sign Up</label>
+                    <input type=" text" name="txt" placeholder="Nome:" required>
+                    <input type=" email" name="email" placeholder="Email:" required>
+                    <input type=" password" name="senha" placeholder="Senha:" required>
+                    <button>Sign Up</button>
+                </form>
+            </div>
+            <div class="login">
+                <form>
+                    <label for="chk" aria-hidden="true">Login</label>
+                    <input type="email" name="email" placeholder="Email:" required>
+                    <input type="password" name="pswd" placeholder="Senha:" required>
+                    <button>Login</button>
+                </form>
+            </div>
+         </div>
         <header>
             <div class="menu-horizontal">
                 <ul class="ul-menu-horizontal">
