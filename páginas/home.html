@@ -21,6 +21,21 @@
     <script type="text/javascript" src="../js/vanilla-tilt.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        /* Estilos para modal */
+        .modal-overlay {
+            display: none; /* Escondido por padrão */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000; /* Certifique-se de que o modal esteja acima de outros elementos */
+        }
+    </style>
 </head>
 <body>
     <div class="modal-overlay" id="modal-overlay">
@@ -60,10 +75,10 @@
                         </label>
                         <nav>
                             <ul class="ul-button">
-                                <li class="li-vertical-menu"><a class="a-vertical-menu" href="#">MENU</a></li>
-                                <li class="li-vertical"><a class="a-vertical" href="#">HOME</a></li>
-                                <li class="li-vertical"><a class="a-vertical" href="#">CONFIGURAÇÕES</a></li>
-                                <li class="li-vertical-fim"><a class="a-vertical" href="#">LOGAR</a></li>
+                                <li class="li-vertical-menu"><a class="a-vertical-menu">MENU</a></li>
+                                <li class="li-vertical"><a class="a-vertical" href="home.html">HOME</a></li>
+                                <li class="li-vertical"><a class="a-vertical" href="confi.html">CONFIGURAÇÕES</a></li>
+                                <li class="li-vertical-fim"><a class="a-vertical" href="#" id="logar-link">LOGAR</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -210,8 +225,13 @@
         </div>
     </footer>
     <script>
+        document.getElementById('logar-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('modal-overlay').style.display = 'flex';
+        });
+
         document.getElementById('close-modal').addEventListener('click', function() {
-        document.getElementById('modal-overlay').style.display = 'none';
+            document.getElementById('modal-overlay').style.display = 'none';
         });
     </script>
 </body>
