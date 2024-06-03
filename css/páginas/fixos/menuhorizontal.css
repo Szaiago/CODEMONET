@@ -178,6 +178,7 @@ header {
     background: linear-gradient(to right, #FFFFFF 0%,#464747 #F9F9F9 100%);
     transition: width 0.4s ease;
     outline: none;
+    box-shadow: 0 0 7px var(--colorSub);
     
     &:focus{ width: 300px; }
   }
