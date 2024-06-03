@@ -33,13 +33,19 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
+.div-button-menu-horizontal{
+  width: 30px;
+  height: 2px;
+  margin-left: 15px;
+  padding: 10px 0px;
+  cursor: pointer;
+}
 .button-menu {
     width: 30px;
-    height: 2px;
+    height: 3px;
     left: 15px;
     cursor: pointer;
-    position: relative;
+    position: absolute;
     display: block;
     background: var(--colorSub);
     transition: 0.5s ease-in-out;
