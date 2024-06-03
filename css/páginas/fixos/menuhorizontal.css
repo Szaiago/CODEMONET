@@ -160,11 +160,23 @@ header {
   .Pesquisar {
     width: 80%;
     height: 60%;
+    border-radius: 15px;
+    border: none;
     display: block;
+    outline: none;
+    text-align: center;
+    box-shadow: 0 0 12px var(--colorSub);
   }
   .Concluir-Pesquisa {
+    cursor: pointer;
     width: 20%;
     height: 60%;
     margin-left: 3px;
     display: block;
+    background-image: url("../../img/pesquisar.png");
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff00;
+    border: none;
+    color: rgba(0, 0, 0, 0);
   }
