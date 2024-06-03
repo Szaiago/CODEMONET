@@ -148,3 +148,23 @@ header {
     position: fixed;
     z-index: 2000;
   }
+  .container-pesquisar {
+    width: 20em;
+    height: 13vh;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .Pesquisar {
+    width: 80%;
+    height: 60%;
+    display: block;
+  }
+  .Concluir-Pesquisa {
+    width: 20%;
+    height: 60%;
+    margin-left: 3px;
+    display: block;
+  }
