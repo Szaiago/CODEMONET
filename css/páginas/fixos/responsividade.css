@@ -67,6 +67,11 @@
         width: 100%;
         top: -14.3em;
       }
+      svg {
+        top: 80px;
+        left: 53px;
+        
+      }
   }
   
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
