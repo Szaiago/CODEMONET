@@ -160,29 +160,32 @@ header {
     margin-right: 15px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
   }
-  .Pesquisar {
-    width: 80%;
-    height: 60%;
-    border-radius: 15px;
-    border: none;
+  input[type=text]{
     display: block;
+    position: relative;
+    padding: 15px 40px 15px 20px;
+    width: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #FFFFFF 0%,#464747 #F9F9F9 100%);
+    transition: width 0.4s ease;
     outline: none;
-    text-align: center;
-    box-shadow: 0 0 12px var(--colorSub);
+    
+    &:focus{ width: 300px; }
   }
-  .Concluir-Pesquisa {
-    cursor: pointer;
-    width: 20%;
-    height: 60%;
-    margin-left: 3px;
-    display: block;
-    background-image: url("../../img/pesquisar.png");
-    background-size: cover;
-    background-position: center;
-    background-color: #ffffff00;
-    border: none;
-    color: rgba(0, 0, 0, 0);
+  
+  i{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: -37px;
+    color: var(--colorSub);
   }
