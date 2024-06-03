@@ -29,3 +29,57 @@
     background-color: rgb(71, 71, 255);
     box-shadow: 0 0 12px blue;
 }
+
+.reset{
+    width: 50%;
+    height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+}
+.reset,
+.reset *,
+.reset :after,
+.reset :before,
+.reset:after,
+.reset:before {
+  box-sizing: border-box;
+}
+.reset {
+  -webkit-tap-highlight-color: transparent;
+  background-color: #ffffff;
+  color: #ffffff;
+  background-image: none;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  border: 0.8 solid black;
+}
+
+.reset {
+  overflow: hidden;
+  position: relative;
+}
+
+.reset span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.reset:before {
+  aspect-ratio: 1;
+  background: #000000;
+  border-radius: 50%;
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 1s;
+  width: 0;
+  
+}
+
+.reset:hover:before {
+  width: 100%;
+}
