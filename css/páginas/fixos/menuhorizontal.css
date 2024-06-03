@@ -163,7 +163,7 @@ header {
     justify-content: flex-end;
     align-items: center;
   }
-  input[type=text]{
+  .login input[type=text]{
     display: block;
     position: relative;
     padding: 15px 40px 15px 20px;
@@ -183,7 +183,7 @@ header {
     &:focus{ width: 300px; }
   }
   
-  i{
+  .login i{
     position: relative;
     display: flex;
     justify-content: center;
