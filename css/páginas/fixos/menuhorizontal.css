@@ -163,7 +163,7 @@ header {
     justify-content: flex-end;
     align-items: center;
   }
-  .login input[type=text]{
+  .container-pesquisar input[type=text]{
     display: block;
     position: relative;
     padding: 15px 40px 15px 20px;
@@ -183,7 +183,7 @@ header {
     &:focus{ width: 300px; }
   }
   
-  .login i{
+  .container-pesquisar i{
     position: relative;
     display: flex;
     justify-content: center;
