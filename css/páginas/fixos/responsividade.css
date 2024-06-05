@@ -119,4 +119,13 @@
   
   
   @media only screen and (min-width: 1441px) {
+    .li-footer {
+      top: -12.5em;
+    }
+  .li-footer-2 {
+      top: -2.55em;
+    }
+  .li-footer-3 {
+      top: -14.3em;
+    }
   }
