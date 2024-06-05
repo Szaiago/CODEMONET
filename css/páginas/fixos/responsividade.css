@@ -50,6 +50,8 @@
     }
     .container-cards-destaques {
       background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
     .titulo {
       font-size: 20px;
