@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>CM/Home</title>
+    <title>CM/Social Button</title>
     <meta charset="utf-8">
     <meta name="author" content="Iago Souza and Henrique Venzon">
     <meta name="publisher" content="Iago Souza and Henrique Venzon" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="description" content="Estilos de objetos para HTML5 e CSS3">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/páginas/fixos/cardlogin.css"/>
-    <link rel="stylesheet" href="../css/páginas/fixos/menuhorizontal.css"/>
-    <link rel="stylesheet" href="../css/páginas/fixos/footer.css"/>
-    <link rel="stylesheet" href="../css/páginas/home.css"/>
-    <link rel="stylesheet" href="../css/páginas/fixos/responsividade.css"/>
-    <link rel="stylesheet" href="../css/buttons-theme/buttons.css"/>
-    <link rel="shortcut icon" type="imagex/png" href="../css/img/logo.png"/>
+    <link rel="stylesheet" href="../../css/páginas/fixos/cardlogin.css"/>
+    <link rel="stylesheet" href="../../css/páginas/fixos/menuhorizontal.css"/>
+    <link rel="stylesheet" href="../../css/páginas/fixos/footer.css"/>
+    <link rel="stylesheet" href="../../css/páginas/home.css"/>
+    <link rel="stylesheet" href="../../css/páginas/fixos/responsividade.css"/>
+    <link rel="stylesheet" href="../../css/buttons-theme/buttons.css"/>
+    <link rel="shortcut icon" type="imagex/png" href="../../css/img/logo.png"/>
     <script src="../js/carrosel.js" defer></script>
     <script src="../js/dropTop.js" defer></script>
     <script src="../js/cards.js" defer></script>
     <script type="text/javascript" src="../js/vanilla-tilt.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        /* Estilos para modal */
+        .modal-overlay {
+            display: none; /* Escondido por padrão */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000; /* Certifique-se de que o modal esteja acima de outros elementos */
+        }
+    </style>
 </head>
 <body>
     <div class="modal-overlay" id="modal-overlay">
@@ -83,7 +98,7 @@
         </div>
     </header>
 
-    <img src="../css/img/logo.png" class="logo-site">
+    <img src="../../css/img/logo.png" class="logo-site">
     <main>
         <div class="fundo-animado">
             <span style="--i:11"></span>
@@ -134,19 +149,6 @@
             <span style="--i:10"></span>
             <span style="--i:27"></span>
         </div>
-        <div class="container-carrosel">
-            <div class="container-slider">
-                <button id="prev-button"><img src="../css/img/arrow.png" alt="prev-button"></button>
-                <div class="container-images">
-                    <img src="../css/img/bemvindosslider.gif" alt="Bem vindo" class="slider on">
-                    <img src="../css/img/seinspireslider.gif" alt="Frase de efeito" class="slider">
-                    <img src="../css/img/vejamaissobrenosslider.gif" alt="Sobre Nós" class="slider">
-                    <img src="../css/img/junteseanosslider.gif" alt="Junte-se a Nós" class="slider">
-                    <img src="../css/img/logoslider.gif" alt="Logo" class="slider">
-                </div>
-                <button id="next-button"><img src="../css/img/arrow.png" alt="next-button"></button>
-            </div>
-        </div>
     </main>
     <div class="container-cards-destaques">
         <div class="titulo-container-cards-destaques">
@@ -162,7 +164,7 @@
                             <input class="Social" id="Social" type="submit" value="BUTTON"> 
                             <p>Visualize o código clicando no botão abaixo:</p>
                         </div>
-                    <a href="button-pages/Social-Button.html">VER MAIS</a>
+                    <a href="#">VER MAIS</a>
                 </div>
             </div>
             <div class="cards-destaques">
