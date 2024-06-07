@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="../../css/páginas/fixos/responsividade.css"/>
     <link rel="stylesheet" href="../../css/buttons-theme/buttons.css"/>
     <link rel="shortcut icon" type="imagex/png" href="../../css/img/logo.png"/>
-    <script src="../js/carrosel.js" defer></script>
-    <script src="../js/dropTop.js" defer></script>
-    <script src="../js/cards.js" defer></script>
-    <script type="text/javascript" src="../js/vanilla-tilt.js"></script>
+    <script src="../../js/copiarcodigo.js"></script>
+    <script src="../../js/dropTop.js" defer></script>
+    <script src="../../js/cards.js" defer></script>
+    <script type="text/javascript" src="../../js/vanilla-tilt.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -115,24 +115,6 @@
             <span style="--i:30"></span>
             <span style="--i:10"></span>
             <span style="--i:27"></span>
-            <span style="--i:26"></span>
-            <span style="--i:1"></span>
-            <span style="--i:15"></span>
-            <span style="--i:6"></span>
-            <span style="--i:23"></span>
-            <span style="--i:22"></span>
-            <span style="--i:32"></span>
-            <span style="--i:11"></span>
-            <span style="--i:17"></span>
-            <span style="--i:25"></span>
-            <span style="--i:14"></span>
-            <span style="--i:9"></span>
-            <span style="--i:28"></span>
-            <span style="--i:2"></span>
-            <span style="--i:7"></span>
-            <span style="--i:30"></span>
-            <span style="--i:10"></span>
-            <span style="--i:27"></span>
         </div>
         <div class="container-principal">
             <div class="container-demo">
@@ -145,6 +127,49 @@
             </div>
             <div class="container-info-demo">
                 <div class="code-demo">
+                    <div class="code-buttons">
+                        <button onclick="showCode('html')" class="buttons-code-demo-html">HTML</button>
+                        <button onclick="showCode('css')" class="buttons-code-demo-css">CSS</button>
+                        <button onclick="showCode('js')" class="buttons-code-demo-javascript">JavaScript</button>
+                    </div>
+                    <div class="code-content" id="html">
+                        <div class="sub-menu-code-content">
+                            <input type="submit" name="copiar" id="copiar" value="Copiar" onclick="copyText()">
+                        </div>
+                        <h5>&lt;div class="container"&gt;</h5>
+                        <h5>&lt;input class="Social" id="Social" type="submit" value="BUTTON"&gt;</h5>
+                        <h5>&lt;/div&gt;</h5>
+                    </div>
+                    <div class="code-content" id="css">
+                        <div class="sub-menu-code-content">
+                            <input type="submit" name="copiar" id="copiar" value="Copiar" onclick="copyText()">
+                        </div>
+                        <h6>.Social {</h6>
+                            <h6>width: 50%;</h6>
+                            <h6>height: 50px;</h6>
+                            <h6>border-radius: 30px;</h6>
+                            <h6>cursor: pointer;</h6>
+                            <h6>display: block;</h6>
+                            <h6>text-align: center;</h6>
+                            <h6>border: none;</h6>
+                            <h6>background-color: blue;</h6>
+                            <h6>color: white;</h6>
+                            <h6>box-shadow: 0 0 12px rgb(26, 106, 255);</h6>
+                            <h6>-moz-transition: all 0.3s;</h6>
+                            <h6>-webkit-transition: all 0.3s;</h6>
+                            <h6>transition: all 0.3s;</h6>
+                            <h6>}</h6>
+                        <h6>.Social:hover {</h6>
+                            <h6>-moz-transform: scale(1.1);</h6>
+                            <h6>-webkit-transform: scale(1.1);</h6>
+                            <h6>transform: scale(1.05);</h6>
+                            <h6>animation: animate 1s linear infinite;</h6>
+                            <h6>background-color: rgb(71, 71, 255);</h6>
+                            <h6>box-shadow: 0 0 12px blue;</h6>
+                            <h6>}</h6>
+                    <div class="code-content" id="js">
+                        <p>JavaScript content goes here</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -272,6 +297,23 @@
 
         document.getElementById('close-modal').addEventListener('click', function() {
             document.getElementById('modal-overlay').style.display = 'none';
+        });
+
+        function showCode(language) {
+            const contents = document.querySelectorAll('.code-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(language).classList.add('active');
+            const buttons = document.querySelectorAll('.code-buttons button');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+            document.querySelector(`.code-buttons button[onclick="showCode('${language}')"]`).classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showCode('html');
         });
     </script>
 </body>

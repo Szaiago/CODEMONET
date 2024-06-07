@@ -22,6 +22,26 @@ h4 {
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
 }
+h5 {
+  margin-left: 5px;
+  margin-top: -20px;
+  font-size: 10px;
+  cursor: default;
+  color: rgb(255, 123, 0);
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h6 {
+  margin-left: 5px;
+  margin-top: -20px;
+  font-size: 10px;
+  cursor: default;
+  color: rgb(0, 110, 255);
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -152,7 +172,97 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
     background-color: #242424;
 }
+.code-demo {
+  position: relative;
+  background: #282c34;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+.code-buttons {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+.buttons-code-demo-html, .buttons-code-demo-css, .buttons-code-demo-javascript {
+  border: none;
+  padding: 10px;
+  width: 33.33333%;
+  cursor: pointer;
+  color: #fff2f2;
+  box-shadow: 0 0 7px rgb(78, 78, 78);
+}
+.buttons-code-demo-html {
+  border-radius: 20px 0 0 20px;
+  background-color: rgb(255, 123, 0);
+}
+.buttons-code-demo-css {
+  background-color: rgb(0, 110, 255);
+}
+.buttons-code-demo-javascript {
+  background-color: yellow;
+  border-radius: 0 20px 20px 0;
+}
+.code-buttons button.active {
+  background: #2d2d2d;
+  color: #fff;
+}
+.code-content {
+  display: none;
+  white-space: pre;
+  height: auto;
+  font-family: 'Courier New', Courier, monospace;
+  background: #1e1e1e;
+  border-radius: 8px;
+  margin-top: 10px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+.code-content::-webkit-scrollbar {
+  width: 12px;      
+}
+
+.code-content::-webkit-scrollbar-track {
+  background: #000000;    
+  box-shadow: 0 0 12px var(--colorSub);
+}
+
+.code-content::-webkit-scrollbar-thumb {
+  background-color: var(--colorSub);      
+  border: 3px solid #ffffff;  
+  border-radius: 0;
+  box-shadow: 0 0 12px var(--colorSub);
+}
+.sub-menu-code-content {
+  cursor: pointer;
+  margin-top: -36px;
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+#copiar {
+  cursor: pointer;
+  display: block;
+  width: 70px;
+  height: 40px;
+  background-color: rgb(43, 111, 237);
+  border: none;
+  border-radius: 5px;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.code-content.active {
+  display: block;
+}
 .container-cards-destaques {
+  margin-top: 20px;
   width: 100%;
   min-height: 30vh;
   border-radius: 15px 15px 0 0;
