@@ -93,7 +93,10 @@ body::-webkit-scrollbar-thumb {
     height: auto;
     min-height: 80vh;
     border-radius: 30px;
-    background-color: rgb(0, 0, 0);
+    background-image: url("../img/fundocards.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 0 0 20px var(--colorSub);
     display: flex;
     flex-direction: row;
