@@ -19,6 +19,7 @@
     <script src="../js/carrosel.js" defer></script>
     <script src="../js/dropTop.js" defer></script>
     <script src="../js/cards.js" defer></script>
+    <script src="../js/carlogin.js" defer></script>
     <script src="../js/modonoturno.js" defer></script>
     <script type="text/javascript" src="../js/vanilla-tilt.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -56,7 +57,6 @@
             <button id="night-mode-btn" onclick="toggleNightMode()">Off</button>
         </div>
     </div>
-
     <header>
         <div class="menu-horizontal">
             <ul class="ul-menu-horizontal">
@@ -301,41 +301,5 @@
             </div>
         </div>
     </footer>
-    <script>
-        document.getElementById('logar-link').addEventListener('click', function(event) {
-            event.preventDefault();
-            document.getElementById('modal-overlay').style.display = 'flex';
-        });
-
-        document.getElementById('close-modal').addEventListener('click', function() {
-            document.getElementById('modal-overlay').style.display = 'none';
-        });
-
-        document.getElementById('config-link').addEventListener('click', function(event) {
-            event.preventDefault();
-            document.getElementById('config-overlay').style.display = 'flex';
-        });
-
-        document.getElementById('close-config-modal').addEventListener('click', function() {
-            document.getElementById('config-overlay').style.display = 'none';
-        });
-
-        function toggleNightMode() {
-            var nightModeBtn = document.getElementById('night-mode-btn');
-            if (nightModeBtn.textContent === 'Off') {
-                // Ativar modo noturno
-                nightModeBtn.textContent = 'On';
-                document.body.style.backgroundColor = 'black';
-                nightModeBtn.style.backgroundColor = 'lightgreen';
-                nightModeBtn.style.boxShadow = '0 0 15px green';
-            } else {
-                // Desativar modo noturno
-                nightModeBtn.textContent = 'Off';
-                document.body.style.backgroundColor = 'white';
-                nightModeBtn.style.backgroundColor = '';
-                nightModeBtn.style.boxShadow = '';
-            }
-        }
-    </script>
 </body>
 </html>

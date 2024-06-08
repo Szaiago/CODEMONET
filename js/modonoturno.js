@@ -1,15 +1,29 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const nightModeBtn = document.getElementById('night-mode-btn');
-    let isNightMode = false;
-
-    nightModeBtn.addEventListener('click', function () {
-        if (isNightMode) {
-            document.body.classList.remove('night-mode');
-            nightModeBtn.textContent = 'Off';
-        } else {
-            document.body.classList.add('night-mode');
-            nightModeBtn.textContent = 'On';
-        }
-        isNightMode = !isNightMode;
-    });
+document.getElementById('close-modal').addEventListener('click', function() {
+    document.getElementById('modal-overlay').style.display = 'none';
 });
+
+document.getElementById('config-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('config-overlay').style.display = 'flex';
+});
+
+document.getElementById('close-config-modal').addEventListener('click', function() {
+    document.getElementById('config-overlay').style.display = 'none';
+});
+
+function toggleNightMode() {
+    var nightModeBtn = document.getElementById('night-mode-btn');
+    if (nightModeBtn.textContent === 'Off') {
+        // Ativar modo noturno
+        nightModeBtn.textContent = 'On';
+        document.body.style.backgroundColor = 'black';
+        nightModeBtn.style.backgroundColor = 'lightgreen';
+        nightModeBtn.style.boxShadow = '0 0 15px green';
+    } else {
+        // Desativar modo noturno
+        nightModeBtn.textContent = 'Off';
+        document.body.style.backgroundColor = 'white';
+        nightModeBtn.style.backgroundColor = '';
+        nightModeBtn.style.boxShadow = '';
+    }
+}

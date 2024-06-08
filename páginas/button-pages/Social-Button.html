@@ -13,11 +13,13 @@
     <link rel="stylesheet" href="../../css/páginas/demo.css"/>
     <link rel="stylesheet" href="../../css/páginas/fixos/responsividade.css"/>
     <link rel="stylesheet" href="../../css/buttons-theme/buttons.css"/>
+    <link rel="stylesheet" href="../../css/páginas/fixos/modonoturno.css"/>
     <link rel="shortcut icon" type="imagex/png" href="../../css/img/logo.png"/>
     <script src="../../js/carlogin.js" defer></script>
     <script src="../../js/cards.js" defer></script>
     <script src="../../js/dropTop.js" defer></script>
     <script src="../../js/copiarcodigo.js" defer></script>
+    <script src="../../js/modonoturno.js" defer></script>
     <script type="text/javascript" src="../../js/vanilla-tilt.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -46,7 +48,14 @@
             </div>
         </div>
     </div>
-
+    <div class="modal-overlay" id="config-overlay">
+        <div class="config-card" id="config-card">
+            <button class="close-button2" id="close-config-modal">&times;</button>
+            <h4>Configurações</h4>
+            <label for="night-mode"><h5>Modo Noturno:</h5></label>
+            <button id="night-mode-btn" onclick="toggleNightMode()">Off</button>
+        </div>
+    </div>
     <header>
         <div class="menu-horizontal">
             <ul class="ul-menu-horizontal">
@@ -63,7 +72,7 @@
                             <ul class="ul-button">
                                 <li class="li-vertical-menu"><a class="a-vertical-menu">MENU</a></li>
                                 <li class="li-vertical"><a class="a-vertical" href="../home.html">HOME</a></li>
-                                <li class="li-vertical"><a class="a-vertical" href="confi.html">CONFIGURAÇÕES</a></li>
+                                <li class="li-vertical"><a class="a-vertical" href="#" id="config-link">CONFIGURAÇÕES</a></li>
                                 <li class="li-vertical-fim"><a class="a-vertical" href="#" id="logar-link">LOGAR</a></li>
                             </ul>
                         </nav>
@@ -82,7 +91,6 @@
             </ul>
         </div>
     </header>
-
     <img src="../../css/img/logo.png" class="logo-site">
     <main>
         <div class="fundo-animado">
@@ -288,50 +296,5 @@
             </div>
         </div>
     </footer>
-    <script>
-        function showCode(language) {
-            const contents = document.querySelectorAll('.code-content');
-            contents.forEach(content => {
-                content.classList.remove('active');
-            });
-            document.getElementById(language).classList.add('active');
-            const buttons = document.querySelectorAll('.code-buttons button');
-            buttons.forEach(button => {
-                button.classList.remove('active');
-            });
-            document.querySelector(`.code-buttons button[onclick="showCode('${language}')"]`).classList.add('active');
-        }
-    
-        document.addEventListener('DOMContentLoaded', () => {
-            showCode('html');
-    
-            document.getElementById('copiar-html').addEventListener('click', () => copyText('html', 'copiar-html'));
-            document.getElementById('copiar-css').addEventListener('click', () => copyText('css', 'copiar-css'));
-            document.getElementById('copiar-js').addEventListener('click', () => copyText('js', 'copiar-js'));
-        });
-    
-        function copyText(language, buttonId) {
-            const container = document.getElementById(language);
-            const textElements = container.querySelectorAll('h5, h6');
-            let textToCopy = '';
-            textElements.forEach(element => {
-                textToCopy += element.textContent + '\n';
-            });
-    
-            navigator.clipboard.writeText(textToCopy).then(() => {
-                const button = document.getElementById(buttonId);
-                const originalText = button.value;
-                button.value = 'Copiado!';
-                button.classList.add('copied');
-                setTimeout(() => {
-                    button.value = originalText;
-                    button.classList.remove('copied');
-                }, 5000); 
-            }).catch(err => {
-                console.error('Erro ao copiar texto: ', err);
-            });
-        }
-    </script>
-    
 </body>
 </html>
