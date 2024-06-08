@@ -48,11 +48,13 @@
             </div>
         </div>
     </div>
-
-    <div class="config-card" id="config-card">
-        <h2>Configurações</h2>
-        <label for="night-mode">Modo Noturno:</label>
-        <button id="night-mode-btn">Off</button>
+    <div class="modal-overlay" id="config-overlay">
+        <div class="config-card" id="config-card">
+            <button class="close-button" id="close-config-modal">&times;</button>
+            <h2>Configurações</h2>
+            <label for="night-mode">Modo Noturno:</label>
+            <button id="night-mode-btn" onclick="toggleNightMode()">Off</button>
+        </div>
     </div>
 
     <header>
@@ -71,7 +73,7 @@
                             <ul class="ul-button">
                                 <li class="li-vertical-menu"><a class="a-vertical-menu">MENU</a></li>
                                 <li class="li-vertical"><a class="a-vertical" href="home.html">HOME</a></li>
-                                <li class="li-vertical"><a class="a-vertical" href="#">CONFIGURAÇÕES</a></li>
+                                <li class="li-vertical"><a class="a-vertical" href="#" id="config-link">CONFIGURAÇÕES</a></li>
                                 <li class="li-vertical-fim"><a class="a-vertical" href="#" id="logar-link">LOGAR</a></li>
                             </ul>
                         </nav>
@@ -94,6 +96,24 @@
     <img src="../css/img/logo.png" class="logo-site">
     <main>
         <div class="fundo-animado">
+            <span style="--i:11"></span>
+            <span style="--i:17"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:9"></span>
+            <span style="--i:28"></span>
+            <span style="--i:2"></span>
+            <span style="--i:7"></span>
+            <span style="--i:30"></span>
+            <span style="--i:10"></span>
+            <span style="--i:27"></span>
+            <span style="--i:26"></span>
+            <span style="--i:1"></span>
+            <span style="--i:15"></span>
+            <span style="--i:6"></span>
+            <span style="--i:23"></span>
+            <span style="--i:22"></span>
+            <span style="--i:32"></span>
             <span style="--i:11"></span>
             <span style="--i:17"></span>
             <span style="--i:25"></span>
@@ -290,6 +310,28 @@
         document.getElementById('close-modal').addEventListener('click', function() {
             document.getElementById('modal-overlay').style.display = 'none';
         });
+
+        document.getElementById('config-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('config-overlay').style.display = 'flex';
+        });
+
+        document.getElementById('close-config-modal').addEventListener('click', function() {
+            document.getElementById('config-overlay').style.display = 'none';
+        });
+
+        function toggleNightMode() {
+            var nightModeBtn = document.getElementById('night-mode-btn');
+            if (nightModeBtn.textContent === 'Off') {
+                // Ativar modo noturno
+                nightModeBtn.textContent = 'On';
+                document.body.classList.add('night-mode');
+            } else {
+                // Desativar modo noturno
+                nightModeBtn.textContent = 'Off';
+                document.body.classList.remove('night-mode');
+            }
+        }
     </script>
 </body>
 </html>
