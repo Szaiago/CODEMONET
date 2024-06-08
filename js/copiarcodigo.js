@@ -30,7 +30,7 @@ function copyText(language, buttonId) {
     navigator.clipboard.writeText(textToCopy).then(() => {
         const button = document.getElementById(buttonId);
         const originalText = button.value;
-        button.value = 'Copiado!';
+        button.value = 'Copiado';
         button.classList.add('copied');
         setTimeout(() => {
             button.value = originalText;
