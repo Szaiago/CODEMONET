@@ -325,11 +325,15 @@
             if (nightModeBtn.textContent === 'Off') {
                 // Ativar modo noturno
                 nightModeBtn.textContent = 'On';
-                document.body.classList.add('night-mode');
+                document.body.style.backgroundColor = 'black';
+                nightModeBtn.style.backgroundColor = 'lightgreen';
+                nightModeBtn.style.boxShadow = '0 0 15px green';
             } else {
                 // Desativar modo noturno
                 nightModeBtn.textContent = 'Off';
-                document.body.classList.remove('night-mode');
+                document.body.style.backgroundColor = 'white';
+                nightModeBtn.style.backgroundColor = '';
+                nightModeBtn.style.boxShadow = '';
             }
         }
     </script>
