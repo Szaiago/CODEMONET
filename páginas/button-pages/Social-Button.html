@@ -134,7 +134,7 @@
                     </div>
                     <div class="code-content" id="html">
                         <div class="sub-menu-code-content">
-                            <input type="submit" name="copiar" id="copiar" value="Copiar" style="display: block;">
+                            <input class="copiar" type="submit" name="copiar" id="copiar-html" value="Copiar" style="display: block;">
                         </div>
                         <h5>&lt;div class="container"&gt;</h5>
                         <h5>&lt;input class="Social" id="Social" type="submit" value="BUTTON"&gt;</h5>
@@ -142,37 +142,38 @@
                     </div>
                     <div class="code-content" id="css">
                         <div class="sub-menu-code-content">
-                            <input type="submit" name="copiar" id="copiar" value="Copiar" style="display: block;">
+                            <input class="copiar" type="submit" name="copiar" id="copiar-css" value="Copiar" style="display: block;">
                         </div>
                         <h6>.Social {</h6>
-                            <h6>width: 50%;</h6>
-                            <h6>height: 50px;</h6>
-                            <h6>border-radius: 30px;</h6>
-                            <h6>cursor: pointer;</h6>
-                            <h6>display: block;</h6>
-                            <h6>text-align: center;</h6>
-                            <h6>border: none;</h6>
-                            <h6>background-color: blue;</h6>
-                            <h6>color: white;</h6>
-                            <h6>box-shadow: 0 0 12px rgb(26, 106, 255);</h6>
-                            <h6>-moz-transition: all 0.3s;</h6>
-                            <h6>-webkit-transition: all 0.3s;</h6>
-                            <h6>transition: all 0.3s;</h6>
-                            <h6>}</h6>
+                        <h6>width: 50%;</h6>
+                        <h6>height: 50px;</h6>
+                        <h6>border-radius: 30px;</h6>
+                        <h6>cursor: pointer;</h6>
+                        <h6>display: block;</h6>
+                        <h6>text-align: center;</h6>
+                        <h6>border: none;</h6>
+                        <h6>background-color: blue;</h6>
+                        <h6>color: white;</h6>
+                        <h6>box-shadow: 0 0 12px rgb(26, 106, 255);</h6>
+                        <h6>-moz-transition: all 0.3s;</h6>
+                        <h6>-webkit-transition: all 0.3s;</h6>
+                        <h6>transition: all 0.3s;</h6>
+                        <h6>}</h6>
                         <h6>.Social:hover {</h6>
-                            <h6>-moz-transform: scale(1.1);</h6>
-                            <h6>-webkit-transform: scale(1.1);</h6>
-                            <h6>transform: scale(1.05);</h6>
-                            <h6>animation: animate 1s linear infinite;</h6>
-                            <h6>background-color: rgb(71, 71, 255);</h6>
-                            <h6>box-shadow: 0 0 12px blue;</h6>
-                            <h6>}</h6>
+                        <h6>-moz-transform: scale(1.1);</h6>
+                        <h6>-webkit-transform: scale(1.1);</h6>
+                        <h6>transform: scale(1.05);</h6>
+                        <h6>animation: animate 1s linear infinite;</h6>
+                        <h6>background-color: rgb(71, 71, 255);</h6>
+                        <h6>box-shadow: 0 0 12px blue;</h6>
+                        <h6>}</h6>
+                    </div>
                     <div class="code-content" id="js">
+                        
                         <p>JavaScript content goes here</p>
                     </div>
                 </div>
             </div>
-        </div>
     </main>
     <div class="container-cards-destaques">
         <div class="titulo-container-cards-destaques">
@@ -290,7 +291,6 @@
         </div>
     </footer>
     <script>
-
         function showCode(language) {
             const contents = document.querySelectorAll('.code-content');
             contents.forEach(content => {
@@ -303,11 +303,37 @@
             });
             document.querySelector(`.code-buttons button[onclick="showCode('${language}')"]`).classList.add('active');
         }
-
+    
         document.addEventListener('DOMContentLoaded', () => {
             showCode('html');
+    
+            document.getElementById('copiar-html').addEventListener('click', () => copyText('html', 'copiar-html'));
+            document.getElementById('copiar-css').addEventListener('click', () => copyText('css', 'copiar-css'));
+            document.getElementById('copiar-js').addEventListener('click', () => copyText('js', 'copiar-js'));
         });
+    
+        function copyText(language, buttonId) {
+            const container = document.getElementById(language);
+            const textElements = container.querySelectorAll('h5, h6');
+            let textToCopy = '';
+            textElements.forEach(element => {
+                textToCopy += element.textContent + '\n';
+            });
+    
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                const button = document.getElementById(buttonId);
+                const originalText = button.value;
+                button.value = 'Copiado!';
+                button.classList.add('copied');
+                setTimeout(() => {
+                    button.value = originalText;
+                    button.classList.remove('copied');
+                }, 5000); 
+            }).catch(err => {
+                console.error('Erro ao copiar texto: ', err);
+            });
+        }
     </script>
+    
 </body>
 </html>
-:
