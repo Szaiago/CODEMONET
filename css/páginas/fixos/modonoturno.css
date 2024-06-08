@@ -69,3 +69,22 @@
 body.night-mode {
     background-color: #121212;
 }
+#config-overlay h4 {
+    margin-top: 15px;
+    font-size: 20px;
+    cursor: default;
+    text-wrap: nowrap;
+    text-transform: uppercase;
+    color: #000000;
+    text-shadow: 0 0 3px var(--colorSub);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #config-overlay h5 {
+    margin-top: 15px;
+    font-size: 15px;
+    cursor: default;
+    text-wrap: nowrap;
+    text-transform: uppercase;
+    color: #000000;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
