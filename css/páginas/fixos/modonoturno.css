@@ -1,0 +1,10 @@
+body.night-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.night-mode .menu-horizontal, 
+body.night-mode .container-cards-destaques, 
+body.night-mode .container-footer {
+    background-color: #333333;
+}
