@@ -69,11 +69,15 @@
       }
     .li-footer-2 {
         width: 100%;
-        top: -8.4vh;
+        top: -13.8vh;
       }
+    .li-footer-2 h4{
+      text-wrap: wrap;
+      font-size: 14px;
+    }
     .li-footer-3 {
         width: 100%;
-        top: -14.3em;
+        top: -12.8em;
       }
       svg {
         top: 80px;
@@ -148,7 +152,7 @@
           top: -2.6em;
         }
       .li-footer-3 {
-          top: -14.3em;
+          top: -12.8em;
         }
   }
   
