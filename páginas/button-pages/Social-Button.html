@@ -134,7 +134,7 @@
                     </div>
                     <div class="code-content" id="html">
                         <div class="sub-menu-code-content">
-                            <input type="submit" name="copiar" id="copiar-html" value="Copiar" style="display: block;">
+                            <input class="copiar" type="submit" name="copiar" id="copiar-html" value="Copiar" style="display: block;">
                         </div>
                         <h5>&lt;div class="container"&gt;</h5>
                         <h5>&lt;input class="Social" id="Social" type="submit" value="BUTTON"&gt;</h5>
@@ -142,7 +142,7 @@
                     </div>
                     <div class="code-content" id="css">
                         <div class="sub-menu-code-content">
-                            <input type="submit" name="copiar" id="copiar-css" value="Copiar" style="display: block;">
+                            <input class="copiar" type="submit" name="copiar" id="copiar-css" value="Copiar" style="display: block;">
                         </div>
                         <h6>.Social {</h6>
                         <h6>width: 50%;</h6>
@@ -324,9 +324,11 @@
                 const button = document.getElementById(buttonId);
                 const originalText = button.value;
                 button.value = 'Copiado!';
+                button.classList.add('copied');
                 setTimeout(() => {
                     button.value = originalText;
-                }, 6000); 
+                    button.classList.remove('copied');
+                }, 5000); 
             }).catch(err => {
                 console.error('Erro ao copiar texto: ', err);
             });

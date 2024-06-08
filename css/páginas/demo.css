@@ -255,6 +255,7 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(43, 111, 237);
   border: none;
   border-radius: 5px;
+  color: #fff;
 }
 .copiar-css {
   cursor: pointer;
@@ -264,6 +265,11 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(43, 111, 237);
   border: none;
   border-radius: 5px;
+}
+.copied {
+  background-color: rgb(0, 199, 0) !important;
+  color: white;
+  border: none;
 }
 .copiar-js {
   cursor: pointer;
