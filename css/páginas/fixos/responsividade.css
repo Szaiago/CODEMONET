@@ -2,6 +2,12 @@
     footer h3 {
       font-size: 14px;
     }
+    h5 {
+      font-size: 7px;
+    }
+    h6 {
+      font-size: 7px;
+    }
     body {
         min-height: 100vh;
     }
