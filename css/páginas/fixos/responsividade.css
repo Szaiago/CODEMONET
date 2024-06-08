@@ -78,6 +78,7 @@
         width: 92%;
         height: auto;
         min-height: 80vh;
+        flex-direction: column;
         justify-content: first baseline;
         align-items: first baseline;
     }
@@ -87,6 +88,19 @@
       min-height: 35vh;
       border-radius: 30px;
   }
+  .demo {
+    width: 100%;
+    height: auto;
+    min-height: 30vh;
+}
+.container-info-demo {
+  width: 100%;
+  height: auto;
+  min-height: 80vh;
+}
+.code-demo {
+  width: 100%;
+}
   }
   
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
