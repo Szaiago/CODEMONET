@@ -12,7 +12,25 @@ h3 {
   background: linear-gradient(45deg/ #000000, #c40062, #fa017d,#e600da, #ff1e8e);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+h4 {
+  margin-top: 15px;
+  font-size: 20px;
+  cursor: default;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  color: #000000;
+  text-shadow: 0 0 3px var(--colorSub);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h5 {
+  margin-top: 15px;
+  font-size: 15px;
+  cursor: default;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  color: #000000;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 body {
     display: flex;
     flex-direction: column;
