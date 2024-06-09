@@ -1,6 +1,6 @@
 <html lang="pt-br">
 <head>
-    <title>CM/Social Button</title>
+    <title>CM/Reset Button</title>
     <meta charset="utf-8">
     <meta name="author" content="Iago Souza and Henrique Venzon">
     <meta name="publisher" content="Iago Souza and Henrique Venzon" />
@@ -127,10 +127,10 @@
         <div class="container-principal">
             <div class="container-demo">
                 <div class="titulo-demo">
-                    <h4>SOCIAL THEME</h4>
+                    <h4>RESET THEME</h4>
                 </div>
                 <div class="demo">
-                    <input class="Social" id="Social" type="submit" value="BUTTON" style="width: 80%; height: 70px;"> 
+                    <button class="reset" id="reset" type="submit" style="width: 80%; height: 70px;"><span>BUTTON</span></button>
                 </div>
             </div>
             <div class="container-info-demo">
@@ -145,7 +145,7 @@
                             <input class="copiar" type="submit" name="copiar" id="copiar-html" value="Copiar" style="display: block;">
                         </div>
                         <h5>&lt;div class="container"&gt;</h5>
-                        <h5>&lt;input class="Social" id="Social" type="submit" value="BUTTON"&gt;</h5>
+                        <h5>&lt;button class="reset" id="reset" type="submit"&gt; &lt;span&gt; &lt;BUTTON&gt;  &lt;/span&gt; &lt;/button&gt;</h5>
                         <h5>&lt;/div&gt;</h5>
                     </div>
                     <div class="code-content" id="css">
@@ -153,11 +153,13 @@
                             <input class="copiar" type="submit" name="copiar" id="copiar-css" value="Copiar" style="display: block;">
                         </div>
                         <h6>
-.Social {
+.reset{
 
 width: 50%;
 
 height: 50px;
+
+border: none;
 
 border-radius: 30px;
 
@@ -165,39 +167,86 @@ cursor: pointer;
 
 display: block;
 
-text-align: center;
+}
 
-border: none;
+.reset,
+.reset *,
+.reset :after,
+.reset :before,
+.reset:after,
+.reset:before {
 
-background-color: blue;
+box-sizing: border-box;
 
-color: white;
+}
+.reset {
 
-box-shadow: 0 0 12px rgb(26, 106, 255);
+-webkit-tap-highlight-color: transparent;
 
--moz-transition: all 0.3s;
+background-color: #ffffff;
 
--webkit-transition: all 0.3s;
+color: #ffffff;
 
-transition: all 0.3s;
+background-image: none;
+
+line-height: 1.5;
+
+margin: 0;
+
+padding: 0;
+
+text-transform: uppercase;
+
+border: 0.8 solid black;
+
+}
+                        
+.reset {
+
+overflow: hidden;
+
+position: relative;
 
 }
 
-.Social:hover {
+.reset span {
 
--moz-transform: scale(1.1);
+font-weight: 900;
 
--webkit-transform: scale(1.1);
+mix-blend-mode: difference;
 
-transform: scale(1.05);
+}
 
-animation: animate 1s linear infinite;
+.reset:before {
 
-background-color: rgb(71, 71, 255);
+aspect-ratio: 1;
 
-box-shadow: 0 0 12px blue;
+background: #000000;
 
-}</h6>
+border-radius: 50%;
+
+content: "";
+
+left: 50%;
+
+position: absolute;
+
+top: 50%;
+
+transform: translate(-50%, -50%);
+
+transition: width 1s;
+
+width: 0;
+   
+}
+ 
+.reset:hover:before {
+
+width: 100%;
+
+}
+                        </h6>
                     </div>
                     <div class="code-content" id="js">
                         <!-- <div class="sub-menu-code-content">
@@ -216,12 +265,12 @@ box-shadow: 0 0 12px blue;
         <div class="responsivo-container-cards-destaques">
             <div class="cards-destaques">
                 <div class="content">
-                    <h3>RESET THEME</h3>
-                    <div class="contaner-buttons">
-                        <button class="reset" id="reset" type="submit"><span>BUTTON</span></button> 
-                        <p>Visualize o código clicando no botão abaixo:</p>
-                    </div>
-                    <a href="Reset-Button.html">VER MAIS</a>
+                    <h3>SOCIAL THEME</h3>
+                        <div class="contaner-buttons">
+                            <input class="Social" id="Social" type="submit" value="BUTTON"> 
+                            <p>Visualize o código clicando no botão abaixo:</p>
+                        </div>
+                    <a href="Social-Button.html">VER MAIS</a>
                 </div>
             </div>
             <div class="cards-destaques">
