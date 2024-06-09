@@ -89,6 +89,7 @@
         height: auto;
         min-height: 80vh;
         flex-direction: column;
+        border-radius: 30px;
         justify-content: first baseline;
         align-items: first baseline;
     }
@@ -113,6 +114,7 @@
 }
 .code-content {
   max-height: 27vh;
+  margin-bottom: 20px;
 }
   }
   
