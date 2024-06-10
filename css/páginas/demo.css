@@ -298,6 +298,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   height: auto;
   background-image: url(../img/fundocards.png);
+  background-position: left;
   background-size: cover;
   box-shadow: 0 0 12px var(--colorSub);
 }

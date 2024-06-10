@@ -60,7 +60,12 @@
       left: -37px;
       color: var(--colorSub);
     }
+    .container-carrosel {
+      margin-top: 5vh;
+  }
     .container-cards-destaques {
+      z-index: 10000;
+      margin-top: -50vh;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
