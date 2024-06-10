@@ -63,7 +63,7 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
   }
 .fundo-animado {
-    position: relative;
+    position: absolute;
     display: flex;
 }
 .fundo-animado span {
@@ -102,6 +102,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: flex-start;
     position: absolute;
+    z-index: 50000;
 }
 .container-slider {
   display: flex;
