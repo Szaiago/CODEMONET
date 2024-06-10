@@ -46,7 +46,13 @@
       
       &:focus{ width: 100px; }
     }
-    
+    .fundo-animado span {
+      width: 10px;
+      height: 8px;
+      margin: 0 2px;
+      animation: animar calc(120s / var(--i)) linear infinite;
+
+  }
     i{
       position: relative;
       display: flex;
