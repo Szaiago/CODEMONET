@@ -63,6 +63,7 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
   }
 .fundo-animado {
+    position: relative;
     display: flex;
 }
 .fundo-animado span {
