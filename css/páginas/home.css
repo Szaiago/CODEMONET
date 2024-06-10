@@ -65,12 +65,13 @@ body::-webkit-scrollbar-thumb {
 .fundo-animado {
     position: absolute;
     display: flex;
+    max-width: 99vw;
 }
 .fundo-animado span {
     width: 30px;
-    height: 30px;
+    height: 20px;
     background: var(--colorSub);
-    margin: 0 4px;
+    margin: 0 2px;
     border-radius: 50%;
     background-color: var(--colorSub);
     box-shadow: 0 0 10px 10px #e600da,
