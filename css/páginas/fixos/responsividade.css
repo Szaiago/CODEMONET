@@ -48,7 +48,7 @@
     }
     .fundo-animado span {
       width: 20px;
-      height: 15px;
+      height: 12px;
       margin: 0 4px;
       animation: animar calc(120s / var(--i)) linear infinite;
 
