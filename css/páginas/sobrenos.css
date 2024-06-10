@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap ');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h3 {
+  font-size: 20px;
+  cursor: default;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  background: linear-gradient(45deg/ #000000, #c40062, #fa017d,#e600da, #ff1e8e);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h4 {
+  margin-top: 15px;
+  font-size: 20px;
+  cursor: default;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  color: #000000;
+  text-shadow: 0 0 3px var(--colorSub);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h5 {
+  margin-top: 15px;
+  font-size: 15px;
+  cursor: default;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  color: #000000;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+ margin: 15px;
+ font-size: 13px;
+ font-family: Arial, Helvetica, sans-serif;
+ text-wrap: wrap;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(221, 221, 221);
+    overflow-y: auto;
+}
+body::-webkit-scrollbar {
+  width: 12px;      
+}
+
+body::-webkit-scrollbar-track {
+  background: #000000;    
+  box-shadow: 0 0 12px var(--colorSub);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--colorSub);      
+  border: 3px solid #ffffff;  
+  border-radius: 0;
+  box-shadow: 0 0 12px var(--colorSub);
+}
+  main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+.fundo-animado {
+    position: absolute;
+    display: flex;
+    max-width: 99vw;
+}
+.fundo-animado span {
+    width: 30px;
+    height: 15px;
+    background: var(--colorSub);
+    margin: 0 4px;
+    border-radius: 50%;
+    background-color: var(--colorSub);
+    box-shadow: 0 0 10px 10px #e600da,
+    0 10px 50px #ff00f2,
+    0 10px 100px var(--colorSub);
+    animation: animar calc(100s / var(--i)) linear infinite;
+}
+@keyframes animar {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+.fundo-animado span:nth-of-type(even) {
+    background: #fa017d;
+    box-shadow: 0 0 10px 10px #ff1e8e,
+    0 10px 50px #c40062,
+    0 10px 100px #fa017d;
+}
+.container-carrosel {
+    margin-top: 24vh;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 8;
+}
+.container-slider {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container-images {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: 400px;
+}
+
+.slider {
+  opacity: 0;
+  transition: opacity .375s;
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.on {
+  opacity: 1;
+}
+
+#prev-button, #next-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#prev-button img, #next-button img {
+  width: 100%;
+  height: 100%;
+}
+
+#prev-button {
+  transform: rotate(180deg);
+}
+.container-sobre-nos {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 0 12px var(--colorSub);
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.titulo {
+    font-size: 40px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #c40062, #000000, #e600da, #ff1e8e);
+    background-size: 400% 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    animation: degrade 10s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @keyframes degrade {
+    0% {
+      background-position-x: 0%;
+    }
+    100% {
+      background-position-x: 400%;
+    }
+  }
+.container-apresentacao-site {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid var(--colorSub);
+}
+.container-Iago {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid var(--colorSub);
+    background-color: #ffffff;
+}
