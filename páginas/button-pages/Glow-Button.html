@@ -1,0 +1,390 @@
+<html lang="pt-br">
+<head>
+    <title>CM/Social Button</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Iago Souza and Henrique Venzon">
+    <meta name="publisher" content="Iago Souza and Henrique Venzon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content="Estilos de objetos para HTML5 e CSS3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/páginas/fixos/cardlogin.css"/>
+    <link rel="stylesheet" href="../../css/páginas/fixos/menuhorizontal.css"/>
+    <link rel="stylesheet" href="../../css/páginas/fixos/footer.css"/>
+    <link rel="stylesheet" href="../../css/páginas/demo.css"/>
+    <link rel="stylesheet" href="../../css/páginas/fixos/responsividade.css"/>
+    <link rel="stylesheet" href="../../css/buttons-theme/buttons.css"/>
+    <link rel="stylesheet" href="../../css/páginas/fixos/modonoturno.css"/>
+    <link rel="shortcut icon" type="imagex/png" href="../../css/img/logo.png"/>
+    <script src="../../js/carlogin.js" defer></script>
+    <script src="../../js/cards.js" defer></script>
+    <script src="../../js/dropTop.js" defer></script>
+    <script src="../../js/copiarcodigo.js" defer></script>
+    <script src="../../js/modonoturno.js" defer></script>
+    <script type="text/javascript" src="../../js/vanilla-tilt.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="card-login">
+            <button class="close-button" id="close-modal">&times;</button>
+            <input type="checkbox" id="chk" aria-hidden="true">
+            <div aria-colspan="cadastrar">
+                <form>
+                    <label class="label-form-input" for="chk" aria-hidden="true">Sign Up</label>
+                    <input class="form-login-input" type="text" name="usuario" placeholder="Nome:" required>
+                    <input class="form-login-input" type="email" name="email" placeholder="Email:" required>
+                    <input class="form-login-input" type="password" name="senha" placeholder="Senha:" required>
+                    <button class="button-form-login">Sign Up</button>
+                </form>
+            </div>
+            <div class="login">
+                <form>
+                    <label class="label-form-input" for="chk" aria-hidden="true">Login</label>
+                    <input class="form-login-input" type="email" name="email" placeholder="Email:" required>
+                    <input class="form-login-input" type="password" name="pswd" placeholder="Senha:" required>
+                    <button class="button-form-login">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="config-overlay">
+        <div class="config-card" id="config-card">
+            <button class="close-button2" id="close-config-modal">&times;</button>
+            <h4>Configurações</h4>
+            <label for="night-mode"><h5>Modo Noturno:</h5></label>
+            <button id="night-mode-btn" onclick="toggleNightMode()">Off</button>
+        </div>
+    </div>
+    <header>
+        <div class="menu-horizontal">
+            <ul class="ul-menu-horizontal">
+                <li class="li-menu-horizontal-menu-vertical">
+                    <div class="container-menu-vertical">
+                        <input type="checkbox" id="menu-horizontal-button">
+                        <label for="menu-horizontal-button">
+                            <div class="div-button-menu-horizontal">
+                                <span class="button-menu"></span>
+                                
+                            </div>
+                        </label>
+                        <nav>
+                            <ul class="ul-button">
+                                <li class="li-vertical-menu"><a class="a-vertical-menu">MENU</a></li>
+                                <li class="li-vertical"><a class="a-vertical" href="../home.html">HOME</a></li>
+                                <li class="li-vertical"><a class="a-vertical" href="#" id="config-link">CONFIGURAÇÕES</a></li>
+                                <li class="li-vertical-fim"><a class="a-vertical" href="#" id="logar-link">LOGAR</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </li>
+                <li class="li-menu-horizontal-logo">
+                    <div class="logo-menu-horizontal">
+                    </div>
+                </li>
+                <li class="li-menu-horizontal-logo">
+                    <div class="container-pesquisar">
+                        <input placeholder='Pesquisar...' class='js-search' type="text">
+                        <i class="fa fa-search"><ion-icon name="search-outline"></ion-icon></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <img src="../../css/img/logo.png" class="logo-site">
+    <main>
+        <div class="fundo-animado">
+            <span style="--i:11"></span>
+            <span style="--i:17"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:9"></span>
+            <span style="--i:28"></span>
+            <span style="--i:2"></span>
+            <span style="--i:7"></span>
+            <span style="--i:30"></span>
+            <span style="--i:10"></span>
+            <span style="--i:27"></span>
+            <span style="--i:26"></span>
+            <span style="--i:1"></span>
+            <span style="--i:15"></span>
+            <span style="--i:6"></span>
+            <span style="--i:23"></span>
+            <span style="--i:22"></span>
+            <span style="--i:32"></span>
+            <span style="--i:11"></span>
+            <span style="--i:17"></span>
+            <span style="--i:25"></span>
+            <span style="--i:14"></span>
+            <span style="--i:9"></span>
+            <span style="--i:28"></span>
+            <span style="--i:2"></span>
+            <span style="--i:7"></span>
+            <span style="--i:30"></span>
+            <span style="--i:10"></span>
+            <span style="--i:27"></span>
+        </div>
+        <div class="container-principal">
+            <div class="container-demo">
+                <div class="titulo-demo">
+                    <h4>GLOW THEME</h4>
+                </div>
+                <div class="demo">
+                    <button class="glow-on-hover" type="button" style="width: 80%; height: 70px;">BUTTON</button>
+                </div>
+            </div>
+            <div class="container-info-demo">
+                <div class="code-demo">
+                    <div class="code-buttons">
+                        <button onclick="showCode('html')" class="buttons-code-demo-html">HTML</button>
+                        <button onclick="showCode('css')" class="buttons-code-demo-css">CSS</button>
+                        <button onclick="showCode('js')" class="buttons-code-demo-javascript">JavaScript</button>
+                    </div>
+                    <div class="code-content" id="html">
+                        <div class="sub-menu-code-content">
+                            <input class="copiar" type="submit" name="copiar" id="copiar-html" value="Copiar" style="display: block;">
+                        </div>
+                        <h5>&lt;div class="container"&gt;</h5>
+                        <h5>&lt;button class="glow-on-hover" type="button"&gt; BUTTON &lt;/button&gt;</h5>
+                        <h5>&lt;/div&gt;</h5>
+                    </div>
+                    <div class="code-content" id="css">
+                        <div class="sub-menu-code-content">
+                            <input class="copiar" type="submit" name="copiar" id="copiar-css" value="Copiar" style="display: block;">
+                        </div>
+                        <h6>
+.glow-on-hover {
+
+    width: 220px;
+
+    height: 50px;
+
+    display: block;
+
+    border: none;
+
+    outline: none;
+
+    color: #fff;
+
+    background: #111;
+
+    cursor: pointer;
+
+    position: relative;
+
+    z-index: 0;
+
+    border-radius: 10px;
+
+}
+
+.glow-on-hover:before {
+
+    content: '';
+
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00,
+
+    #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+
+    position: absolute;
+
+    top: -2px;
+
+    left:-2px;
+
+    background-size: 400%;
+
+    z-index: -1;
+
+    filter: blur(5px);
+
+    width: calc(100% + 4px);
+
+    height: calc(100% + 4px);
+
+    animation: glowing 20s linear infinite;
+
+    opacity: 0;
+
+    transition: opacity .3s ease-in-out;
+
+    border-radius: 10px;
+
+}
+
+.glow-on-hover:active {
+
+    color: #000
+
+}
+
+.glow-on-hover:active:after {
+
+    background: transparent;
+
+}
+
+.glow-on-hover:hover:before {
+
+    opacity: 1;
+
+}
+
+.glow-on-hover:after {
+
+    z-index: -1;
+
+    content: '';
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: #111;
+
+    left: 0;
+
+    top: 0;
+
+    border-radius: 10px;
+
+}
+
+@keyframes glowing {
+
+    0% { background-position: 0 0; }
+
+    50% { background-position: 400% 0; }
+
+    100% { background-position: 0 0; }
+
+}</h6>
+                    </div>
+                    <div class="code-content" id="js">
+                        <!-- <div class="sub-menu-code-content">
+                            <input type="submit" name="copiar" id="copiar-js" value="Copiar" style="display: block;">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+    </main>
+    <div class="container-cards-destaques">
+        <div class="titulo-container-cards-destaques">
+            <div class="titulo">
+                <h2>MAIS OPÇÕES:</h2>
+            </div>
+        </div>
+        <div class="responsivo-container-cards-destaques">
+            <div class="cards-destaques">
+                <div class="content">
+                    <h3>RESET THEME</h3>
+                    <div class="contaner-buttons">
+                        <button class="reset" id="reset" type="submit"><span>BUTTON</span></button> 
+                        <p>Visualize o código clicando no botão abaixo:</p>
+                    </div>
+                    <a href="Reset-Button.html">VER MAIS</a>
+                </div>
+            </div>
+            <div class="cards-destaques">
+                <div class="content">
+                    <h3>GLOW THEME</h3>
+                    <div class="contaner-buttons">
+                        <button class="glow-on-hover" type="button">BUTTON</button>
+                        <p>Visualize o código clicando no botão abaixo:</p>
+                    </div>
+                    <a href="#">VER MAIS</a>
+                </div>
+            </div>
+            <div class="cards-destaques">
+                <div class="content">
+                    <h3>FLASH THEME</h3>
+                    <div class="contaner-buttons">
+                        <button class="flash">
+                            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                              <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                              <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                            </svg>
+                            <span>BUTTON</span>
+                          </button>
+                        <p>Visualize o código clicando no botão abaixo:</p>
+                    </div>
+                    <a href="#">VER MAIS</a>
+                </div>
+            </div>
+            <div class="cards-destaques">
+                <div class="content">
+                    <h3>3D THEME</h3>
+                    <div class="contaner-buttons">
+                        <button class="treeD-Button"><span>Click!</span><span>BUTTON</span></button>
+                        <p>Visualize o código clicando no botão abaixo:</p>
+                    </div>
+                    <a href="#">VER MAIS</a>
+                </div>
+            </div>
+            <div class="cards-destaques">
+                <div class="content">
+                    <h3>PISCK THEME</h3>
+                    <div class="contaner-buttons">
+                        <button class="pisck">BUTTON</button>
+                        <p>Visualize o código clicando no botão abaixo:</p>
+                    </div>
+                    <a href="#">VER MAIS</a>
+                </div>
+            </div>
+            <div class="cards-destaques">
+                <div class="content">
+                    <h3>WOBBLE THEME</h3>
+                    <div class="contaner-buttons">
+                        <button class="wobble"><span>BUTTON</span></button>
+                        <p>Visualize o código clicando no botão abaixo:</p>
+                    </div>
+                    <a href="#">VER MAIS</a>
+                </div>
+            </div>
+            <div class="cards-destaques">
+                <div class="content">
+                    <h3>CLICK THEME</h3>
+                    <div class="contaner-buttons">
+                        <button class="click">BUTTON</button>
+                        <p>Visualize o código clicando no botão abaixo:</p>
+                    </div>
+                    <a href="#">VER MAIS</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <div class="container-footer">
+            <div class="sub-menu-footer" id="sub-menu-1">
+                <h3>SUBMENUS</h3>
+                <ul class="li-footer" id="submenu-list-1">
+                    <li><a class="a-footer" href="#">BOTÕES</a></li>
+                    <li><a class="a-footer" href="#">CARROSEL</a></li>
+                    <li><a class="a-footer" href="#">SCROLL</a></li>
+                    <li><a class="a-footer" href="#">ANIMAÇÕES</a></li>
+                    <li><a class="a-footer" href="#">MENUS</a></li>
+                </ul>
+            </div>
+            <div class="sub-menu-footer-info" id="sub-menu-2">
+                <h3>SOBRE NÓS</h3>
+                <ul class="li-footer-2" id="submenu-list-2">
+                    <li><h4 class="p-footer-2">Estudantes da Escola Sesi Senai de Itajaí/SC</h4></li>
+                </ul>
+            </div>
+            <div class="sub-menu-footer-redes-sociais" id="sub-menu-3">
+                <h3>REDES SOCIAIS</h3>
+                <ul class="li-footer-3" id="submenu-list-3">
+                    <li><a class="a-footer"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a class="a-footer"><ion-icon name="mail-outline"></ion-icon></a></li>
+                    <li><a class="a-footer"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a class="a-footer"><ion-icon name="logo-github"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
