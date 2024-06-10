@@ -37,6 +37,13 @@ p {
  font-family: Arial, Helvetica, sans-serif;
  text-wrap: wrap;
 }
+.p1 {
+    margin: 15px;
+    font-size: 13px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-wrap: wrap;
+   }
 body {
     display: flex;
     flex-direction: column;
