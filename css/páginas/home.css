@@ -102,7 +102,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: flex-start;
     position: absolute;
-    z-index: 50000;
+    z-index: 8;
 }
 .container-slider {
   display: flex;
