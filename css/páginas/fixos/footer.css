@@ -182,9 +182,3 @@ footer {
     position: relative;
     border-right: 1px solid var(--colorSub);
   }
-  img {
-    -webkit-user-select: none; 
-    -moz-user-select: none;   
-    -ms-user-select: none;    
-    user-select: none;        
-  }
