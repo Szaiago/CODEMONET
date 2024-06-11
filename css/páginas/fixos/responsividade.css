@@ -63,6 +63,9 @@
     .container-carrosel {
       margin-top: 5vh;
   }
+  .fundo-animado {
+    height: 50vh;
+}
     .container-cards-destaques {
       z-index: 3;
       margin-top: -50vh;
