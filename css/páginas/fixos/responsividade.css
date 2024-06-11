@@ -76,7 +76,7 @@
     }
 }
     .container-cards-destaques {
-      z-index: 3;
+      z-index: 4;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
