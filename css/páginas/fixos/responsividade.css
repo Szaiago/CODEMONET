@@ -63,12 +63,12 @@
     .container-carrosel {
       margin-top: 5vh;
   }
-  .fundo-animado {
-    height: 50vh;
-}
+  main {
+    height: 80vh;
+
+  }
     .container-cards-destaques {
       z-index: 3;
-      margin-top: -50vh;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
