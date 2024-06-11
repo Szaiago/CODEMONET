@@ -64,9 +64,17 @@
       margin-top: 5vh;
   }
   main {
-    height: 80vh;
+    height: 50vh;
 
   }
+  @keyframes animar {
+    0% {
+        transform: translateY(50vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}
     .container-cards-destaques {
       z-index: 3;
       background-position: center;
