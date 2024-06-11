@@ -62,6 +62,7 @@
     }
     .container-carrosel {
       margin-top: 5vh;
+      z-index: 3;
   }
   main {
     height: 50vh;
