@@ -216,6 +216,9 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   margin: 30px;
 }
+.icone-sobre-nos {
+  font-size: 70px;
+}
 .glow-on-hover-ig{
     width: 100px;
     height: 100px;

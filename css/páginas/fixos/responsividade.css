@@ -195,8 +195,17 @@
   .li-footer-3 {
       top: -14.3em;
     }
+    .container-carrosel {
+      margin-top: 35vh;
+      z-index: 3;
+  }
     .container-images {
-      width: 150vh;
-      height: 600px;
+      width: 70vw;
+    }
+    .container-sobre-nos {
+      margin-top: 40px;
+    }
+    .icone-sobre-nos {
+      font-size: 30px;
     }
   }
