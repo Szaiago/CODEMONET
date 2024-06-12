@@ -208,89 +208,241 @@ body::-webkit-scrollbar-thumb {
     background-color: #ffffff;
 }
 .social_media {
+  width: auto;
+  height: auto;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100vh;
+  margin: 30px;
+}
+.glow-on-hover-ig{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 10px;
+    display: block;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
 }
 
-.social_media a {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #7a38ac;
+.glow-on-hover-ig:before {
+    content: '';
+    background: linear-gradient(45deg, #ff00f2, #d40040, #c300ff, #9c08af, #6a00b1, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 100px;
+}
+
+.glow-on-hover-ig:active {
+    color: #000
+}
+
+.glow-on-hover-ig:active:after {
+    background: transparent;
+}
+
+.glow-on-hover-ig:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover-ig:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 100px;
+    
+}
+.glow-on-hover-email{
   width: 100px;
   height: 100px;
-  border-radius: 50%;
-  fill: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  text-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  border-radius: 100px;
+  margin: 10px;
+  display: block;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
 }
 
-.social_media a:not(:last-child){
-  margin-right: 50px;
+.glow-on-hover-email:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #d40040, #ff0000, #ff5b5b, #7a0400, #ff1818, #ff2e27, #af0000, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 100px;
 }
 
-.social_media a:hover .balloon{
-  top: -75px;
+.glow-on-hover-email:active {
+  color: #000
+}
+
+.glow-on-hover-email:active:after {
+  background: transparent;
+}
+
+.glow-on-hover-email:hover:before {
   opacity: 1;
 }
 
-.social_media svg {
-  height: 50px;
-  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, .2));
-}
-
-.social_media .balloon{
+.glow-on-hover-email:after {
+  z-index: -1;
+  content: '';
   position: absolute;
-  top: -50px;
-  width: 200px;
-  height: 50px;
-  opacity: 0;
-  border-radius: 30px;
-  transition: top .2s ease-in-out, opacity .2s ease-in-out;
-  filter: drop-shadow(0 5px 10px rgba(0,0,0,.2));
-}
-
-.social_media .name{
-  position: relative;
-  border-radius: 30px;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #7a38ac;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+  
 }
-
-.social_media .name::before{
-  content: "";
-  position: absolute;
+.glow-on-hover-twitter{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 10px;
   display: block;
-  width: 25px;
-  height: 25px;
-  background-color: #7a38ac;
-  transform: rotate(45deg);
-  bottom: -10px;
-  border-radius: 4px;
-  z-index:-1;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
 }
 
-
-.social_media a.twitter,
-.social_media a.twitter .name,
-.social_media a.twitter .name::before{
-  background-color: #36b9ff;
+.glow-on-hover-twitter:before {
+  content: '';
+  background: linear-gradient(45deg, #58bcff, #269dff, #00a2ff, #007adf, #0097dd, #18f7ff, #0088f7, #006ec9, #108afc);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 100px;
 }
 
-.social_media a.tiktok,
-.social_media a.tiktok .name,
-.social_media a.tiktok .name::before{
-  background-color: #ff004f;
+.glow-on-hover-twitter:active {
+  color: #000
+}
+
+.glow-on-hover-twitter:active:after {
+  background: transparent;
+}
+
+.glow-on-hover-twitter:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover-twitter:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+  
+}
+.glow-on-hover-github{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 10px;
+  display: block;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+
+.glow-on-hover-github:before {
+  content: '';
+  background: linear-gradient(45deg, #2f00ff, #8400ff, #8400ff, #0400ff, #2f32f7, #5900ff, #0011ff, #7700ff, #6200ff);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 100px;
+}
+
+.glow-on-hover-github:active {
+  color: #000
+}
+
+.glow-on-hover-github:active:after {
+  background: transparent;
+}
+
+.glow-on-hover-github:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover-github:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+  
+}
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
 
