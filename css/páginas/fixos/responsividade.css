@@ -195,4 +195,8 @@
   .li-footer-3 {
       top: -14.3em;
     }
+    .container-images {
+      width: 150vh;
+      height: 600px;
+    }
   }
