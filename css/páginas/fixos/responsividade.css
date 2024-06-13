@@ -87,12 +87,12 @@
     .li-footer {
         z-index: 300;
         width: 100%;
-        top: -13.4em;
+        top: -13em;
       }
     .li-footer-2 {
       z-index: 300;
         width: 100%;
-        top: -7.8vh;
+        top: -10vh;
       }
     .li-footer-2 h4{
       text-wrap: wrap;
@@ -101,7 +101,7 @@
     .li-footer-3 {
       z-index: 300;
         width: 100%;
-        top: -15.8em;
+        top: -14em;
       }
       svg {
         top: 80px;
