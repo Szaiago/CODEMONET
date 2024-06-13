@@ -193,6 +193,21 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
 }
+.texto-sobre-nos-empresa {
+  margin: 10px;
+  width: 80%;
+  height: auto;
+  color: white;
+  background-color: rgba(27, 27, 27, 0.822);
+  border-radius: 15px;
+}
+.texto-sobre-nos-dev{
+  margin: 10px;
+  width: 80%;
+  height: auto;
+  background-color: rgba(233, 233, 233, 0.822);
+  border-radius: 15px;
+}
 .sobrenos-img {
   border-radius: 5px;
   margin: 10px;
