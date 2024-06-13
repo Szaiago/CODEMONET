@@ -64,10 +64,7 @@
       margin-top: 5vh;
       z-index: 3;
   }
-  main {
-    height: 50vh;
 
-  }
   @keyframes animar {
     0% {
         transform: translateY(50vh) scale(0);
@@ -76,6 +73,7 @@
         transform: translateY(-10vh) scale(1);
     }
 }
+
     .container-cards-destaques {
       z-index: 4;
       background-position: center;
@@ -121,23 +119,23 @@
     }
     .container-demo {
       width: 100%;
-      height: auto;
       min-height: 35vh;
       border-radius: 30px;
   }
   .demo {
     width: 100%;
-    height: auto;
     min-height: 30vh;
 }
 .container-info-demo {
   width: 100%;
   height: auto;
-  min-height: 80vh;
+  min-height: 50vh;
 }
 .code-demo {
   width: 100%;
+  min-height: 40vh;
 }
+
 .code-content {
   max-height: 27vh;
   margin-bottom: 20px;
