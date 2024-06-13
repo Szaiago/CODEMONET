@@ -193,10 +193,10 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
 }
-.logosobrenos {
+.sobrenos-img {
   border-radius: 5px;
   margin: 10px;
-  width: 50%;
+  width: 70%;
   box-shadow: 0 0 12px var(--colorSub);
 }
 .container-Iago {
