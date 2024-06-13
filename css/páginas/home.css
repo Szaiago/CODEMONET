@@ -209,7 +209,10 @@ body::-webkit-scrollbar-thumb {
   backdrop-filter: blur(5px);
 }
 .responsivo-container-cards-destaques .cards-destaques .content{
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   transition: 0.5s;
   opacity: 0;
