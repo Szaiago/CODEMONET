@@ -192,7 +192,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
 }
 .logosobrenos {
-  border-radius: 20px;
+  border-radius: 5px;
   margin: 10px;
   width: 50%;
   box-shadow: 0 0 12px var(--colorSub);
