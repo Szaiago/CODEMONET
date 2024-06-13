@@ -218,6 +218,8 @@ body::-webkit-scrollbar-thumb {
   margin: 30px;
 }
 .icone {
+  text-decoration: none;
+  color: white;
   margin: 0;
   display: flex;
   justify-content: center;
