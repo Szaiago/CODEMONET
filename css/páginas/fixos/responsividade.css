@@ -87,10 +87,12 @@
       text-wrap: nowrap;
     }
     .li-footer {
+        z-index: 300;
         width: 100%;
         top: -12.5em;
       }
     .li-footer-2 {
+      z-index: 300;
         width: 100%;
         top: -13.8vh;
       }
@@ -99,6 +101,7 @@
       font-size: 14px;
     }
     .li-footer-3 {
+      z-index: 300;
         width: 100%;
         top: -12.8em;
       }
