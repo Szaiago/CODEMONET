@@ -197,6 +197,7 @@ body::-webkit-scrollbar-thumb {
   margin: 10px;
   width: 80%;
   height: auto;
+  color: white;
   background-color: rgba(27, 27, 27, 0.822);
   border-radius: 15px;
 }
