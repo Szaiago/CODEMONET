@@ -21,12 +21,14 @@ h4 {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 p {
+ text-align: left;
  margin: 15px;
  font-size: 13px;
  font-family: Arial, Helvetica, sans-serif;
  text-wrap: wrap;
 }
 .p1 {
+    text-align: left;
     margin: 15px;
     font-size: 13px;
     color: #000000;
