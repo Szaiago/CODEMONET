@@ -201,11 +201,19 @@ body::-webkit-scrollbar-thumb {
   background-color: rgba(27, 27, 27, 0.822);
   border-radius: 15px;
 }
-.texto-sobre-nos-dev{
+.texto-sobre-nos-dev-iago{
   margin: 10px;
   width: 80%;
   height: auto;
   background-color: rgba(233, 233, 233, 0.822);
+  border-radius: 15px;
+}
+.texto-sobre-nos-dev-henrique{
+  margin: 10px;
+  width: 80%;
+  height: auto;
+  color: white;
+  background-color: rgba(27, 27, 27, 0.822);
   border-radius: 15px;
 }
 .sobrenos-img {
@@ -224,6 +232,17 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     border-top: 2px solid var(--colorSub);
     background-color: #ffffff;
+}
+.container-Henrique {
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid var(--colorSub);
+  background-color: #000000;
 }
 .social_media {
   width: auto;
