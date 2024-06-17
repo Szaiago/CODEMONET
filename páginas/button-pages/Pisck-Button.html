@@ -25,6 +25,22 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
+<style>
+    .pisck::before {
+  min-width: calc(100% + 12px);
+  min-height: calc(100% + 12px);
+}
+@keyframes ring {
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+  }
+}
+</style>
 <body>
     <div class="modal-overlay" id="modal-overlay">
         <div class="card-login">
@@ -129,7 +145,7 @@
         <div class="container-principal">
             <div class="container-demo">
                 <div class="titulo-demo">
-                    <h4>GLOW THEME</h4>
+                    <h4>PISCK THEME</h4>
                 </div>
                 <div class="demo">
                     <button class="pisck" style="width: 80%; height: 70px;">BUTTON</button>
@@ -147,7 +163,7 @@
                             <input class="copiar" type="submit" name="copiar" id="copiar-html" value="Copiar" style="display: block;">
                         </div>
                         <h5>&lt;div class="container"&gt;</h5>
-                        <h5>&lt;button class="glow-on-hover" type="button"&gt; BUTTON &lt;/button&gt;</h5>
+                        <h5>&lt;button class="pisck"&gt; BUTTON &lt;/button&gt;</h5>
                         <h5>&lt;/div&gt;</h5>
                     </div>
                     <div class="code-content" id="css">
@@ -155,114 +171,141 @@
                             <input class="copiar" type="submit" name="copiar" id="copiar-css" value="Copiar" style="display: block;">
                         </div>
                         <h6>
-.glow-on-hover {
+.pisck {
 
-    width: 220px;
+min-width: 50%;
 
-    height: 50px;
+min-height: 40px;
 
-    display: block;
+font-family: 'Nunito', sans-serif;
 
-    border: none;
+font-size: 22px;
 
-    outline: none;
+text-transform: uppercase;
 
-    color: #fff;
+letter-spacing: 1.3px;
 
-    background: #111;
+font-weight: 700;
 
-    cursor: pointer;
+color: #313133;
 
-    position: relative;
+background: #4FD1C5;
 
-    z-index: 0;
+background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
 
-    border-radius: 10px;
+border: none;
+
+border-radius: 1000px;
+
+box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+
+transition: all 0.3s ease-in-out 0s;
+
+cursor: pointer;
+
+outline: none;
+
+position: relative;
+
+padding: 10px;
+
+}
+                              
+.pisck::before {
+
+content: '';
+
+border-radius: 1000px;
+
+min-width: calc(120px + 12px);
+
+min-height: calc(50px + 12px);
+
+border: 6px solid #00FFCB;
+
+box-shadow: 0 0 60px rgba(0,255,203,.64);
+
+position: absolute;
+
+top: 50%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+
+opacity: 0;
+
+transition: all .3s ease-in-out 0s;
+
+}
+                              
+.pisck:hover, .pisck:focus {
+
+color: #313133;
+
+transform: translateY(-6px);
+
+}
+                              
+.pisck:hover::before, .pisck:focus::before {
+
+opacity: 1;
+
+}
+                              
+.pisck::after {
+
+content: '';
+
+width: 30px; height: 30px;
+
+border-radius: 100%;
+
+border: 6px solid #00FFCB;
+
+position: absolute;
+
+z-index: -1;
+
+top: 50%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+
+animation: ring 1.5s infinite;
 
 }
 
-.glow-on-hover:before {
+.pisck:hover::after, .pisck:focus::after {
+    
+animation: none;
 
-    content: '';
-
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00,
-
-    #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-
-    position: absolute;
-
-    top: -2px;
-
-    left:-2px;
-
-    background-size: 400%;
-
-    z-index: -1;
-
-    filter: blur(5px);
-
-    width: calc(100% + 4px);
-
-    height: calc(100% + 4px);
-
-    animation: glowing 20s linear infinite;
-
-    opacity: 0;
-
-    transition: opacity .3s ease-in-out;
-
-    border-radius: 10px;
+display: none;
 
 }
 
-.glow-on-hover:active {
+@keyframes ring {
 
-    color: #000
+0% {
 
-}
+  width: 30px;
 
-.glow-on-hover:active:after {
+  height: 30px;
 
-    background: transparent;
-
-}
-
-.glow-on-hover:hover:before {
-
-    opacity: 1;
+  opacity: 1;
 
 }
 
-.glow-on-hover:after {
+100% {
 
-    z-index: -1;
+  width: 150px;
 
-    content: '';
+  height: 150px;
 
-    position: absolute;
-
-    width: 100%;
-
-    height: 100%;
-
-    background: #111;
-
-    left: 0;
-
-    top: 0;
-
-    border-radius: 10px;
+  opacity: 0;
 
 }
-
-@keyframes glowing {
-
-    0% { background-position: 0 0; }
-
-    50% { background-position: 400% 0; }
-
-    100% { background-position: 0 0; }
-
 }</h6>
                     </div>
                     <div class="code-content" id="js">
@@ -296,8 +339,8 @@
                         <div class="contaner-buttons">
                             <input class="Social" id="Social" type="submit" value="BUTTON"> 
                         </div>
-                    <a href="button-pages/Social-Button.html">VER MAIS</a>
                     <p>Visualize o código clicando no botão abaixo:</p>
+                    <a href="button-pages/Social-Button.html">VER MAIS</a>
                 </div>
             </div>
             <div class="cards-destaques">
@@ -328,15 +371,14 @@
             </div>
             <div class="cards-destaques">
                 <div class="content">
-                    <h3>PISCK THEME</h3>
+                    <h3>GLOW THEME</h3>
                     <div class="contaner-buttons">
-                        <button class="pisck">BUTTON</button>
-                        <p>Visualize o código clicando no botão abaixo:</p>
+                        <button class="glow-on-hover" type="button">BUTTON</button>
                     </div>
-                    <a href="Pisck-Button.html">VER MAIS</a>
+                    <p>Visualize o código clicando no botão abaixo:</p>
+                    <a href="Glow-Button.html">VER MAIS</a>
                 </div>
-            </div>
-            <div class="cards-destaques">
+            </div>     <div class="cards-destaques">
                 <div class="content">
                     <h3>WOBBLE THEME</h3>
                     <div class="contaner-buttons">
