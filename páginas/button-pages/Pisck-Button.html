@@ -1,6 +1,6 @@
 <html lang="pt-br">
 <head>
-    <title>CM/Reset Button</title>
+    <title>CM/Pisck Button</title>
     <meta charset="utf-8">
     <meta name="author" content="Iago Souza and Henrique Venzon">
     <meta name="publisher" content="Iago Souza and Henrique Venzon" />
@@ -129,10 +129,10 @@
         <div class="container-principal">
             <div class="container-demo">
                 <div class="titulo-demo">
-                    <h4>RESET THEME</h4>
+                    <h4>GLOW THEME</h4>
                 </div>
                 <div class="demo">
-                    <button class="reset" id="reset" type="submit" style="width: 80%; height: 70px;"><span>BUTTON</span></button>
+                    <button class="pisck" style="width: 80%; height: 70px;">BUTTON</button>
                 </div>
             </div>
             <div class="container-info-demo">
@@ -147,7 +147,7 @@
                             <input class="copiar" type="submit" name="copiar" id="copiar-html" value="Copiar" style="display: block;">
                         </div>
                         <h5>&lt;div class="container"&gt;</h5>
-                        <h5>&lt;button class="reset" id="reset" type="submit"&gt; &lt;span&gt; &lt;BUTTON&gt;  &lt;/span&gt; &lt;/button&gt;</h5>
+                        <h5>&lt;button class="glow-on-hover" type="button"&gt; BUTTON &lt;/button&gt;</h5>
                         <h5>&lt;/div&gt;</h5>
                     </div>
                     <div class="code-content" id="css">
@@ -155,101 +155,115 @@
                             <input class="copiar" type="submit" name="copiar" id="copiar-css" value="Copiar" style="display: block;">
                         </div>
                         <h6>
-.reset{
+.glow-on-hover {
 
-width: 50%;
+    width: 220px;
 
-height: 50px;
+    height: 50px;
 
-border: none;
+    display: block;
 
-border-radius: 30px;
+    border: none;
 
-cursor: pointer;
+    outline: none;
 
-display: block;
+    color: #fff;
 
-}
+    background: #111;
 
-.reset,
-.reset *,
-.reset :after,
-.reset :before,
-.reset:after,
-.reset:before {
+    cursor: pointer;
 
-box-sizing: border-box;
+    position: relative;
 
-}
+    z-index: 0;
 
-.reset {
-
--webkit-tap-highlight-color: transparent;
-
-background-color: #ffffff;
-
-color: #ffffff;
-
-background-image: none;
-
-line-height: 1.5;
-
-margin: 0;
-
-padding: 0;
-
-text-transform: uppercase;
-
-border: 0.8 solid black;
-
-}
-                        
-.reset {
-
-overflow: hidden;
-
-position: relative;
+    border-radius: 10px;
 
 }
 
-.reset span {
+.glow-on-hover:before {
 
-font-weight: 900;
+    content: '';
 
-mix-blend-mode: difference;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00,
+
+    #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+
+    position: absolute;
+
+    top: -2px;
+
+    left:-2px;
+
+    background-size: 400%;
+
+    z-index: -1;
+
+    filter: blur(5px);
+
+    width: calc(100% + 4px);
+
+    height: calc(100% + 4px);
+
+    animation: glowing 20s linear infinite;
+
+    opacity: 0;
+
+    transition: opacity .3s ease-in-out;
+
+    border-radius: 10px;
+
+}
+
+.glow-on-hover:active {
+
+    color: #000
 
 }
 
-.reset:before {
+.glow-on-hover:active:after {
 
-aspect-ratio: 1;
-
-background: #000000;
-
-border-radius: 50%;
-
-content: "";
-
-left: 50%;
-
-position: absolute;
-
-top: 50%;
-
-transform: translate(-50%, -50%);
-
-transition: width 1s;
-
-width: 0;
-   
-}
- 
-.reset:hover:before {
-
-width: 100%;
+    background: transparent;
 
 }
-                        </h6>
+
+.glow-on-hover:hover:before {
+
+    opacity: 1;
+
+}
+
+.glow-on-hover:after {
+
+    z-index: -1;
+
+    content: '';
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: #111;
+
+    left: 0;
+
+    top: 0;
+
+    border-radius: 10px;
+
+}
+
+@keyframes glowing {
+
+    0% { background-position: 0 0; }
+
+    50% { background-position: 400% 0; }
+
+    100% { background-position: 0 0; }
+
+}</h6>
                     </div>
                     <div class="code-content" id="js">
                         <!-- <div class="sub-menu-code-content">
@@ -268,22 +282,22 @@ width: 100%;
         <div class="responsivo-container-cards-destaques">
             <div class="cards-destaques">
                 <div class="content">
-                    <h3>SOCIAL THEME</h3>
-                        <div class="contaner-buttons">
-                            <input class="Social" id="Social" type="submit" value="BUTTON"> 
-                            <p>Visualize o código clicando no botão abaixo:</p>
-                        </div>
-                    <a href="Social-Button.html">VER MAIS</a>
+                    <h3>RESET THEME</h3>
+                    <div class="contaner-buttons">
+                        <button class="reset" id="reset" type="submit"><span>BUTTON</span></button> 
+                    </div>
+                    <p>Visualize o código clicando no botão abaixo:</p>
+                    <a href="Reset-Button.html">VER MAIS</a>
                 </div>
             </div>
             <div class="cards-destaques">
                 <div class="content">
-                    <h3>GLOW THEME</h3>
-                    <div class="contaner-buttons">
-                        <button class="glow-on-hover" type="button">BUTTON</button>
-                        <p>Visualize o código clicando no botão abaixo:</p>
-                    </div>
-                    <a href="Glow-Button.html">VER MAIS</a>
+                    <h3>SOCIAL THEME</h3>
+                        <div class="contaner-buttons">
+                            <input class="Social" id="Social" type="submit" value="BUTTON"> 
+                        </div>
+                    <a href="button-pages/Social-Button.html">VER MAIS</a>
+                    <p>Visualize o código clicando no botão abaixo:</p>
                 </div>
             </div>
             <div class="cards-destaques">
@@ -297,8 +311,8 @@ width: 100%;
                             </svg>
                             <span>BUTTON</span>
                           </button>
-                        <p>Visualize o código clicando no botão abaixo:</p>
                     </div>
+                    <p>Visualize o código clicando no botão abaixo:</p>
                     <a href="#">VER MAIS</a>
                 </div>
             </div>
@@ -307,8 +321,8 @@ width: 100%;
                     <h3>3D THEME</h3>
                     <div class="contaner-buttons">
                         <button class="treeD-Button"><span>Click!</span><span>BUTTON</span></button>
-                        <p>Visualize o código clicando no botão abaixo:</p>
                     </div>
+                    <p>Visualize o código clicando no botão abaixo:</p>
                     <a href="#">VER MAIS</a>
                 </div>
             </div>
@@ -327,8 +341,8 @@ width: 100%;
                     <h3>WOBBLE THEME</h3>
                     <div class="contaner-buttons">
                         <button class="wobble"><span>BUTTON</span></button>
-                        <p>Visualize o código clicando no botão abaixo:</p>
                     </div>
+                    <p>Visualize o código clicando no botão abaixo:</p>
                     <a href="#">VER MAIS</a>
                 </div>
             </div>
@@ -337,8 +351,8 @@ width: 100%;
                     <h3>CLICK THEME</h3>
                     <div class="contaner-buttons">
                         <button class="click">BUTTON</button>
-                        <p>Visualize o código clicando no botão abaixo:</p>
                     </div>
+                    <p>Visualize o código clicando no botão abaixo:</p>
                     <a href="#">VER MAIS</a>
                 </div>
             </div>
