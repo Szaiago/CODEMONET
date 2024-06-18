@@ -1,32 +1,65 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>CM/Home</title>
+    <title>3D Button</title>
     <meta charset="utf-8">
     <meta name="author" content="Iago Souza and Henrique Venzon">
     <meta name="publisher" content="Iago Souza and Henrique Venzon" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="description" content="Estilos de objetos para HTML5 e CSS3">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/páginas/fixos/cardlogin.css"/>
-    <link rel="stylesheet" href="../css/páginas/fixos/menuhorizontal.css"/>
-    <link rel="stylesheet" href="../css/páginas/fixos/footer.css"/>
-    <link rel="stylesheet" href="../css/páginas/home.css"/>
-    <link rel="stylesheet" href="../css/páginas/main-css/mainHome.css"/>
-    <link rel="stylesheet" href="../css/páginas/fixos/responsividade.css"/>
-    <link rel="stylesheet" href="../css/buttons-theme/buttons.css"/>
-    <link rel="stylesheet" href="../css/páginas/fixos/modonoturno.css"/>
-    <link rel="shortcut icon" type="imagex/png" href="../css/img/logo.png"/>
-    <script src="../js/carrosel.js" defer></script>
-    <script src="../js/dropTop.js" defer></script>
-    <script src="../js/cards.js" defer></script>
-    <script src="../js/carlogin.js" defer></script>
-    <script src="../js/modonoturno.js" defer></script>
-    <script type="text/javascript" src="../js/vanilla-tilt.js"></script>
+    <link rel="stylesheet" href="../../css/páginas/fixos/cardlogin.css"/>
+    <link rel="stylesheet" href="../../css/páginas/fixos/menuhorizontal.css"/>
+    <link rel="stylesheet" href="../../css/páginas/fixos/footer.css"/>
+    <link rel="stylesheet" href="../../css/páginas/demo.css"/>
+    <link rel="stylesheet" href="../../css/páginas/main-css/mainButtons.css"/>
+    <link rel="stylesheet" href="../../css/páginas/fixos/responsividade.css"/>
+    <link rel="stylesheet" href="../../css/buttons-theme/buttons.css"/>
+    <link rel="stylesheet" href="../../css/páginas/fixos/modonoturno.css"/>
+    <link rel="shortcut icon" type="imagex/png" href="../../css/img/logo.png"/>
+    <script src="../../js/carlogin.js" defer></script>
+    <script src="../../js/cards.js" defer></script>
+    <script src="../../js/dropTop.js" defer></script>
+    <script src="../../js/copiarcodigo.js" defer></script>
+    <script src="../../js/modonoturno.js" defer></script>
+    <script type="text/javascript" src="../../js/vanilla-tilt.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
+    <style>
+        .treeD-Button{
+        cursor: pointer;
+        right: 20px;
+        margin-bottom: 17px;
+        border:none;
+        box-shadow: none;
+        width: 130px;
+        height: 0px;
+        line-height: 42px;
+        -webkit-perspective: 230px;
+        perspective: 230px;
+        color: white;
+        }
+        .treeD-Button span {
+        background: rgb(238, 0, 198);
+        background: linear-gradient(0deg, rgb(238, 0, 206) 0%, rgb(190, 5, 160) 100%);
+        display: block;
+        position: absolute;
+        width: 130px;
+        height: 40px;
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+        border-radius: 5px;
+        margin:0;
+        text-align: center;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        }
+    </style>
     <div class="modal-overlay" id="modal-overlay">
         <div class="card-login">
             <button class="close-button" id="close-modal">&times;</button>
@@ -55,9 +88,7 @@
             <button class="close-button2" id="close-config-modal">&times;</button>
             <h4>Configurações</h4>
             <label for="night-mode"><h5>Modo Noturno:</h5></label>
-            <div class="caixa-modo-noturno">
-                <button id="night-mode-btn" onclick="toggleNightMode()">Off</button>
-            </div>
+            <button id="night-mode-btn" onclick="toggleNightMode()">Off</button>
         </div>
     </div>
     <header>
@@ -75,8 +106,8 @@
                         <nav>
                             <ul class="ul-button">
                                 <li class="li-vertical-menu"><a class="a-vertical-menu">MENU</a></li>
-                                <li class="li-vertical"><a class="a-vertical" href="home.html">HOME</a></li>
-                                <li class="li-vertical"><a class="a-vertical" href="sobrenos.html">SOBRE NÓS</a></li>
+                                <li class="li-vertical"><a class="a-vertical" href="../home.html">HOME</a></li>
+                                <li class="li-vertical"><a class="a-vertical" href="../sobrenos.html">SOBRE NÓS</a></li>
                                 <li class="li-vertical"><a class="a-vertical" href="#" id="config-link">CONFIGURAÇÕES</a></li>
                                 <li class="li-vertical-fim"><a class="a-vertical" href="#" id="logar-link">LOGAR</a></li>
                             </ul>
@@ -96,8 +127,7 @@
             </ul>
         </div>
     </header>
-
-    <img src="../css/img/logo.png" class="logo-site">
+    <img src="../../css/img/logo.png" class="logo-site">
     <main>
         <div class="fundo-animado">
             <span style="--i:11"></span>
@@ -129,74 +159,163 @@
             <span style="--i:30"></span>
             <span style="--i:10"></span>
             <span style="--i:27"></span>
-            <span style="--i:26"></span>
-            <span style="--i:1"></span>
-            <span style="--i:15"></span>
-            <span style="--i:6"></span>
-            <span style="--i:23"></span>
-            <span style="--i:22"></span>
-            <span style="--i:32"></span>
-            <span style="--i:11"></span>
-            <span style="--i:17"></span>
-            <span style="--i:25"></span>
-            <span style="--i:14"></span>
-            <span style="--i:9"></span>
-            <span style="--i:28"></span>
-            <span style="--i:2"></span>
-            <span style="--i:7"></span>
-            <span style="--i:30"></span>
-            <span style="--i:10"></span>
-            <span style="--i:27"></span>
-            <span style="--i:26"></span>
-            <span style="--i:1"></span>
-            <span style="--i:15"></span>
-            <span style="--i:6"></span>
-            <span style="--i:23"></span>
-            <span style="--i:22"></span>
-            <span style="--i:32"></span>
-            <span style="--i:11"></span>
-            <span style="--i:17"></span>
-            <span style="--i:25"></span>
-            <span style="--i:14"></span>
-            <span style="--i:9"></span>
-            <span style="--i:28"></span>
-            <span style="--i:2"></span>
-            <span style="--i:7"></span>
-            <span style="--i:30"></span>
-            <span style="--i:10"></span>
-            <span style="--i:27"></span>
         </div>
-        <div class="container-carrosel">
-            <div class="container-slider">
-                <button id="prev-button"><img src="../css/img/arrow.png" alt="prev-button"></button>
-                <div class="container-images">
-                    <img src="../css/img/bemvindosslider.gif" alt="Bem vindo" class="slider on">
-                    <img src="../css/img/seinspireslider.gif" alt="Frase de efeito" class="slider">
-                    <img src="../css/img/vejamaissobrenosslider.gif" alt="Sobre Nós" class="slider">
-                    <img src="../css/img/junteseanosslider.gif" alt="Junte-se a Nós" class="slider">
-                    <img src="../css/img/logoslider.gif" alt="Logo" class="slider">
+        <div class="container-principal">
+            <div class="container-demo">
+                <div class="titulo-demo">
+                    <h4>3D THEME</h4>
                 </div>
-                <button id="next-button"><img src="../css/img/arrow.png" alt="next-button"></button>
+                <div class="demo">
+                    <div class="contaner-buttons">
+                        <button class="treeD-Button" ><span>Click!</span><span>BUTTON</span></button>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="container-info-demo">
+                <div class="code-demo">
+                    <div class="code-buttons">
+                        <button onclick="showCode('html')" class="buttons-code-demo-html">HTML</button>
+                        <button onclick="showCode('css')" class="buttons-code-demo-css">CSS</button>
+                        <button onclick="showCode('js')" class="buttons-code-demo-javascript">JavaScript</button>
+                    </div>
+                    <div class="code-content" id="html">
+                        <div class="sub-menu-code-content">
+                            <input class="copiar" type="submit" name="copiar" id="copiar-html" value="Copiar" style="display: block;">
+                        </div>
+                        <h5>&lt;div class="contaner-buttons"&gt;</h5>
+                        <h5>&lt;button class="treeD-Button"&gt;&lt;span&gt;Click!&lt;/span&gt;&lt;span&gt;BUTTON&lt;/span&gt; &lt;/button&gt;</h5>
+                        <h5>&lt;/div&gt;</h5>
+                    </div>
+                    <div class="code-content" id="css">
+                        <div class="sub-menu-code-content">
+                            <input class="copiar" type="submit" name="copiar" id="copiar-css" value="Copiar" style="display: block;">
+                        </div>
+                        <h6>
+.glow-on-hover {
+
+    width: 220px;
+
+    height: 50px;
+
+    display: block;
+
+    border: none;
+
+    outline: none;
+
+    color: #fff;
+
+    background: #111;
+
+    cursor: pointer;
+
+    position: relative;
+
+    z-index: 0;
+
+    border-radius: 10px;
+
+}
+
+.glow-on-hover:before {
+
+    content: '';
+
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00,
+
+    #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+
+    position: absolute;
+
+    top: -2px;
+
+    left:-2px;
+
+    background-size: 400%;
+
+    z-index: -1;
+
+    filter: blur(5px);
+
+    width: calc(100% + 4px);
+
+    height: calc(100% + 4px);
+
+    animation: glowing 20s linear infinite;
+
+    opacity: 0;
+
+    transition: opacity .3s ease-in-out;
+
+    border-radius: 10px;
+
+}
+
+.glow-on-hover:active {
+
+    color: #000
+
+}
+
+.glow-on-hover:active:after {
+
+    background: transparent;
+
+}
+
+.glow-on-hover:hover:before {
+
+    opacity: 1;
+
+}
+
+.glow-on-hover:after {
+
+    z-index: -1;
+
+    content: '';
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: #111;
+
+    left: 0;
+
+    top: 0;
+
+    border-radius: 10px;
+
+}
+
+@keyframes glowing {
+
+    0% { background-position: 0 0; }
+
+    50% { background-position: 400% 0; }
+
+    100% { background-position: 0 0; }
+
+}</h6>
+                    </div>
+                    <div class="code-content" id="js">
+                        <!-- <div class="sub-menu-code-content">
+                            <input type="submit" name="copiar" id="copiar-js" value="Copiar" style="display: block;">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
     </main>
     <div class="container-cards-destaques">
         <div class="titulo-container-cards-destaques">
             <div class="titulo">
-                <h2>VOCÊ PODE GOSTAR:</h2>
+                <h2>MAIS OPÇÕES:</h2>
             </div>
         </div>
         <div class="responsivo-container-cards-destaques">
-            <div class="cards-destaques">
-                <div class="content">
-                    <h3>SOCIAL THEME</h3>
-                        <div class="contaner-buttons">
-                            <input class="Social" id="Social" type="submit" value="BUTTON"> 
-                        </div>
-                        <p>Visualize o código clicando no botão abaixo:</p>
-                    <a href="button-pages/Social-Button.html">VER MAIS</a>
-                </div>
-            </div>
             <div class="cards-destaques">
                 <div class="content">
                     <h3>RESET THEME</h3>
@@ -204,17 +323,17 @@
                         <button class="reset" id="reset" type="submit"><span>BUTTON</span></button> 
                     </div>
                     <p>Visualize o código clicando no botão abaixo:</p>
-                    <a href="button-pages/Reset-Button.html">VER MAIS</a>
+                    <a href="Reset-Button.html">VER MAIS</a>
                 </div>
             </div>
             <div class="cards-destaques">
                 <div class="content">
-                    <h3>GLOW THEME</h3>
-                    <div class="contaner-buttons">
-                        <button class="glow-on-hover" type="button">BUTTON</button>
-                    </div>
+                    <h3>SOCIAL THEME</h3>
+                        <div class="contaner-buttons">
+                            <input class="Social" id="Social" type="submit" value="BUTTON"> 
+                        </div>
                     <p>Visualize o código clicando no botão abaixo:</p>
-                    <a href="button-pages/Glow-Button.html">VER MAIS</a>
+                    <a href="Social-Button.html">VER MAIS</a>
                 </div>
             </div>
             <div class="cards-destaques">
@@ -222,7 +341,7 @@
                     <h3>FLASH THEME</h3>
                     <div class="contaner-buttons">
                         <button class="flash">
-                            <svg width="180px"  height="60px" viewBox="0 0 180 60" class="border" style="top:62px;">
+                            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                               <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                               <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
                             </svg>
@@ -230,7 +349,7 @@
                           </button>
                     </div>
                     <p>Visualize o código clicando no botão abaixo:</p>
-                    <a href="button-pages/Flash-Button.html">VER MAIS</a>
+                    <a href="Flash-Button.html">VER MAIS</a>
                 </div>
             </div>
             <div class="cards-destaques">
@@ -240,7 +359,7 @@
                         <button class="treeD-Button"><span>Click!</span><span>BUTTON</span></button>
                     </div>
                     <p>Visualize o código clicando no botão abaixo:</p>
-                    <a href="button-pages/3D-Button.html">VER MAIS</a>
+                    <a href="#">VER MAIS</a>
                 </div>
             </div>
             <div class="cards-destaques">
@@ -250,7 +369,7 @@
                         <button class="pisck">BUTTON</button>
                     </div>
                     <p>Visualize o código clicando no botão abaixo:</p>
-                    <a href="button-pages/Pisck-Button.html">VER MAIS</a>
+                    <a href="Pisck-Button.html">VER MAIS</a>
                 </div>
             </div>
             <div class="cards-destaques">
