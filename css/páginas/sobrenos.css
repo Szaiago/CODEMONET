@@ -281,8 +281,9 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
     position: relative;
     z-index: 0;
+    transition-duration: 1s;
+    transform: translateY(0px);
 }
-
 .glow-on-hover-ig:before {
     content: '';
     background: linear-gradient(45deg, #ff00f2, #d40040, #c300ff, #9c08af, #6a00b1, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -337,6 +338,8 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   position: relative;
   z-index: 0;
+  transition-duration: 1s;
+  transform: translateY(0px);
 }
 
 .glow-on-hover-email:before {
@@ -355,7 +358,6 @@ body::-webkit-scrollbar-thumb {
   transition: opacity .3s ease-in-out;
   border-radius: 100px;
 }
-
 .glow-on-hover-email:active {
   color: #000;
 }
@@ -393,8 +395,9 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   position: relative;
   z-index: 0;
+  transition-duration: 1s;
+  transform: translateY(0px);
 }
-
 .glow-on-hover-twitter:before {
   content: '';
   background: linear-gradient(45deg, #58bcff, #269dff, #00a2ff, #007adf, #0097dd, #18f7ff, #0088f7, #006ec9, #108afc);
@@ -449,8 +452,9 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   position: relative;
   z-index: 0;
+  transition-duration: 1s;
+  transform: translateY(0px);
 }
-
 .glow-on-hover-github:before {
   content: '';
   background: linear-gradient(45deg, #2f00ff, #8400ff, #8400ff, #0400ff, #2f32f7, #5900ff, #0011ff, #7700ff, #6200ff);
@@ -491,6 +495,10 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   border-radius: 100px;
   
+}
+.glow-on-hover-ig:hover, .glow-on-hover-email:hover, .glow-on-hover-twitter:hover, .glow-on-hover-github:hover {
+  transition-duration: 1s;
+  transform: translateY(-15px);
 }
 @keyframes glowing {
     0% { background-position: 0 0; }
