@@ -224,6 +224,12 @@ body::-webkit-scrollbar-thumb {
   margin: 10px;
   width: 70%;
   box-shadow: 0 0 12px var(--colorSub);
+  transition: 2s;
+}
+.sobrenos-img:hover {
+  margin: 10px;
+  transition: 2s;
+  transform: scale(1.05);
 }
 .container-Iago {
     width: 100%;
