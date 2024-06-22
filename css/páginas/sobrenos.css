@@ -229,7 +229,7 @@ body::-webkit-scrollbar-thumb {
 .sobrenos-img:hover {
   margin: 10px;
   transition: 2s;
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 .container-Iago {
     width: 100%;
