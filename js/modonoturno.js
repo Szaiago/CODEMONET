@@ -13,15 +13,15 @@ document.getElementById('close-config-modal').addEventListener('click', function
 
 function toggleNightMode() {
     var nightModeBtn = document.getElementById('night-mode-btn');
-    if (nightModeBtn.textContent === 'Off') {
+    if (nightModeBtn.textContent === 'OFF') {
         // Ativar modo noturno
-        nightModeBtn.textContent = 'On';
+        nightModeBtn.textContent = 'ON';
         document.body.style.backgroundColor = 'black';
         nightModeBtn.style.backgroundColor = 'lightgreen';
         nightModeBtn.style.boxShadow = '0 0 15px green';
     } else {
         // Desativar modo noturno
-        nightModeBtn.textContent = 'Off';
+        nightModeBtn.textContent = 'OFF';
         document.body.style.backgroundColor = 'white';
         nightModeBtn.style.backgroundColor = '';
         nightModeBtn.style.boxShadow = '';
