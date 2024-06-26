@@ -132,11 +132,11 @@
                     <h4>FLASH THEME</h4>
                 </div>
                 <div class="demo">
-                    <button class="flash" style="width: 80%;height: 70px;">
-                            <svg width="100%"  height="70px" viewBox="0 0 180 60" class="border" style="top:246px;left: -506px">
-                                <polyline points="365,1 365,59 1,59 1,1 365,1" class="bg-line" />
-                                <polyline points="365,1 365,59 1,59 1,1 365,1" class="hl-line" />
-                            </svg>
+                    <button class="flash">
+                        <svg width="180px"  height="60px" viewBox="0 0 180 60" class="border" style="top:390px; left:284px;">
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                          </svg>
                             <span>BUTTON</span>
                           </button>
                 </div>
@@ -153,7 +153,13 @@
                             <input class="copiar" type="submit" name="copiar" id="copiar-html" value="Copiar" style="display: block;">
                         </div>
                         <h5>&lt;div class="container"&gt;</h5>
-                        <h5>&lt;button class="reset" id="reset" type="submit"&gt; &lt;span&gt; &lt;BUTTON&gt;  &lt;/span&gt; &lt;/button&gt;</h5>
+                        <h5>&lt;button class="flash"&gt;</h5>
+                        <h5>&lt;svg width="180px"  height="60px" viewBox="0 0 180 60" class="border" style="top:390px; left:284px;"&gt;</h5>
+                        <h5>&lt;polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line"&gt;</h5>
+                        <h5>&lt;polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line"&gt;</h5>
+                        <h5>&lt;/svg"&gt;</h5>
+                        <h5>&lt;span&gt;BUTTON&lt;/span&gt;</h5>
+                        <h5>&lt;/button&gt;</h5>
                         <h5>&lt;/div&gt;</h5>
                     </div>
                     <div class="code-content" id="css">
@@ -161,99 +167,66 @@
                             <input class="copiar" type="submit" name="copiar" id="copiar-css" value="Copiar" style="display: block;">
                         </div>
                         <h6>
-.reset{
+.flash {
 
-width: 50%;
+    width: 180px;
 
-height: 50px;
+    height: 60px;
 
-border: none;
+    cursor: pointer;
 
-border-radius: 30px;
+    background: transparent;
 
-cursor: pointer;
+    border: 1px solid #91C9FF;
 
-display: block;
+    outline: none;
 
-}
+    transition: 1s ease-in-out;
 
-.reset,
-.reset *,
-.reset :after,
-.reset :before,
-.reset:after,
-.reset:before {
+  }
+  
+svg {
 
-box-sizing: border-box;
+    position: absolute;
 
-}
+    top: 82px;
 
-.reset {
+    left: 50px;
 
--webkit-tap-highlight-color: transparent;
+    fill: none;
 
-background-color: #ffffff;
+    stroke: #fff;
 
-color: #ffffff;
+    stroke-dasharray: 150 480;
 
-background-image: none;
+    stroke-dashoffset: 150;
 
-line-height: 1.5;
-
-margin: 0;
-
-padding: 0;
-
-text-transform: uppercase;
-
-border: 0.8 solid black;
+    transition: 1s ease-in-out;
 
 }
-                        
-.reset {
+  
+.flash:hover {
 
-overflow: hidden;
+    transition: 1s ease-in-out;
 
-position: relative;
-
-}
-
-.reset span {
-
-font-weight: 900;
-
-mix-blend-mode: difference;
+    background: #4F95DA;
 
 }
+  
+.flash:hover svg {
 
-.reset:before {
+    stroke-dashoffset: -480;
 
-aspect-ratio: 1;
-
-background: #000000;
-
-border-radius: 50%;
-
-content: "";
-
-left: 50%;
-
-position: absolute;
-
-top: 50%;
-
-transform: translate(-50%, -50%);
-
-transition: width 1s;
-
-width: 0;
-   
 }
- 
-.reset:hover:before {
+  
+.flash span {
 
-width: 100%;
+    color: white;
 
+    font-size: 18px;
+
+    font-weight: 100;
+    
 }
                         </h6>
                     </div>
